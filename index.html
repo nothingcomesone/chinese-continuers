@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>HSC 中文继续 · 口语冲刺 Continuers Speaking</title>
+<style>:root{{--g:#1f7a4d;--gd:#14532d;--bg:#f4f7f5;--card:#fff;--ink:#1a1a1a;--mut:#667;--py:#0a7;--acc:#c0392b;}}
+*{{box-sizing:border-box;-webkit-tap-highlight-color:transparent}}
+body{{margin:0;font-family:-apple-system,"PingFang SC","Microsoft YaHei",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}}
+.wrap{{max-width:680px;margin:0 auto;padding:0 14px 60px}}
+header{{background:linear-gradient(135deg,var(--gd),var(--g));color:#fff;padding:20px 16px 16px;border-radius:0 0 18px 18px;box-shadow:0 2px 10px rgba(0,0,0,.15)}}
+header h1{{margin:0;font-size:22px}}
+.sub{{opacity:.92;font-size:13px;margin-top:3px}}
+.exambadge{{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);padding:5px 10px;border-radius:20px;font-size:12.5px;margin-top:10px;font-weight:600}}
+.method{{background:rgba(255,255,255,.12);border-radius:12px;padding:10px 12px;margin-top:12px;font-size:13px}}
+.method b{{color:#ffe08a}}
+.bar{{position:sticky;top:0;z-index:9;background:var(--bg);padding:10px 0 6px}}
+.barin{{background:#e3ebe6;border-radius:20px;height:12px;overflow:hidden}}
+.barfill{{height:100%;background:linear-gradient(90deg,var(--g),#36b37e);width:0;transition:width .3s}}
+.barlabel{{font-size:12px;color:var(--mut);margin-top:4px;text-align:center}}
+details{{background:var(--card);border-radius:12px;margin:10px 0;padding:0 14px;box-shadow:0 1px 4px rgba(0,0,0,.06)}}
+summary{{font-weight:700;padding:12px 0;cursor:pointer;font-size:14.5px}}
+.rphrase{{padding:7px 0;border-top:1px solid #eee;font-size:14px}}
+.rphrase b{{font-size:16px}} .rphrase i{{color:var(--py)}} .rphrase span{{color:var(--mut);font-size:13px}}
+.planbox{{padding-bottom:12px;font-size:14px}}
+.plan-row{{margin-top:8px;color:var(--gd)}} .plan-li{{padding:2px 0 2px 12px;color:#334;font-size:13.5px}}
+.plan-rule{{margin-top:10px;background:#fff7e6;border:1px solid #ffe2a8;border-radius:10px;padding:8px 10px;font-size:13px}}
+h2.theme{{font-size:16px;margin:22px 4px 8px;color:var(--gd);border-left:4px solid var(--g);padding-left:8px}}
+.theme-en{{font-size:11px;color:var(--mut);font-weight:400;display:block}}
+.prio{{background:#fde9a8;color:#8a5a00;font-size:10.5px;padding:2px 7px;border-radius:10px;vertical-align:2px;margin-left:4px}}
+.card{{background:var(--card);border-radius:14px;padding:14px;margin:10px 0;box-shadow:0 1px 5px rgba(0,0,0,.07)}}
+.card.done{{border-left:4px solid var(--g)}}
+.cardtop{{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}}
+.num{{background:var(--g);color:#fff;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700}}
+.done{{font-size:13px;color:var(--mut);user-select:none}} .done input{{transform:scale(1.25);margin-right:5px;vertical-align:-2px;accent-color:var(--g)}}
+.zh{{font-size:20px;font-weight:600;letter-spacing:.5px}} .zh.sm{{font-size:17px}}
+.py{{color:var(--py);font-size:14px;margin-top:2px}}
+.en{{color:var(--mut);font-size:13.5px;margin-top:3px}}
+.controls{{display:flex;gap:8px;margin-top:12px}}
+button{{font:inherit;border:0;border-radius:10px;padding:11px 14px;font-weight:700;cursor:pointer;flex:1}}
+.play{{background:var(--g);color:#fff}} .play:active{{background:var(--gd)}} .play.playing{{background:var(--acc)}}
+.reveal{{background:#eef2ef;color:var(--gd)}}
+.timer{{text-align:center;font-size:15px;color:var(--acc);font-weight:700;margin-top:8px;min-height:0}}
+.model{{margin-top:12px;background:#f7faf8;border-radius:12px;padding:12px;border:1px dashed #cfe0d6}}
+.mtop{{display:flex;justify-content:space-between;align-items:center;margin-bottom:5px}}
+.mlabel,.flabel{{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--g);font-weight:700}}
+.playmodel{{flex:0 0 auto;background:#eaf5ee;color:var(--gd);padding:6px 12px;font-size:13px;border:1px solid #cfe6d8}}
+.playmodel.playing{{background:var(--acc);color:#fff}}
+.vocab{{margin:10px 0;display:flex;flex-wrap:wrap;gap:6px}}
+.chip{{background:#eaf5ee;border:1px solid #cfe6d8;border-radius:16px;padding:4px 10px;font-size:12.5px}}
+.chip b{{font-size:14px}} .chip i{{color:var(--py)}}
+.tip{{background:#fff7e6;border:1px solid #ffe2a8;border-radius:10px;padding:9px 11px;font-size:13.5px;margin-top:8px}}
+.follow{{margin-top:12px;border-top:1px solid #e3ece6;padding-top:10px}}
+.hint{{background:#eef4ff;border:1px solid #cfe0ff;border-radius:9px;padding:7px 10px;font-size:13px;margin-top:5px;color:#234}}
+footer{{text-align:center;color:var(--mut);font-size:13px;margin-top:26px;padding:16px}} footer b{{color:var(--g)}}</style></head>
+<body><div class="wrap">
+<header><h1>中文继续 · 口语冲刺 🎙️</h1>
+  <div class="sub">HSC Chinese Continuers · Speaking practice · 49 questions</div>
+  <div class="exambadge">📌 HSC 口语考试 · 重点在「个人世界 The individual」</div>
+  <div class="method"><b>每个回答 = 说什么 → 做什么 → 为什么/感想</b> (Description → Action → Reflection).<br>
+  先直接回答, then 3+ sentences. Every answer: one time-word (了/过/将来/想) + one connector (因为…所以 / 虽然…但是). <b>Never go silent</b> — use a thinking phrase. ★考试重点 = the examiner stays in YOUR personal world.</div></header>
+<div class="bar"><div class="barin"><div class="barfill" id="bf"></div></div><div class="barlabel" id="bl">0 / 49 practised</div></div>
+<details><summary>😬 卡住了？先学这些「拖时间」句子 — Stuck? Learn these first</summary><div style="padding-bottom:12px"><div class="rphrase"><b>让我想一想。</b> <i>ràng wǒ xiǎng yī xiǎng。</i><br><span>Let me think for a moment.</span></div><div class="rphrase"><b>这是一个很好的问题。</b> <i>zhè shì yí gè hěn hǎo de wèn tí。</i><br><span>That&#x27;s a good question.</span></div><div class="rphrase"><b>对不起，请您再说一遍。</b> <i>duì bù qǐ，qǐng nín zài shuō yī biàn。</i><br><span>Sorry, could you say that again? (ask IN Chinese, never switch to English)</span></div><div class="rphrase"><b>换句话说…</b> <i>huàn jù huà shuō…</i><br><span>In other words... (use to restart a sentence instead of freezing)</span></div></div></details>
+<details><summary>🗓️ 两周冲刺计划 — your 2-week plan</summary><div class="planbox">
+ <div class="plan-row"><b>Week 1 · learn the answers</b> — do the ★考试重点 themes first (cards 1–25)</div>
+ <div class="plan-li">个人/家庭 · 学校/未来 · 运动/休闲 · 打工/工作 · 青少年话题</div>
+ <div class="plan-row"><b>Week 2 · make them automatic</b> — add 旅游/生活方式, then drill all (1–49)</div>
+ <div class="plan-li">Mid-week: a FULL 10-minute mock with your teacher</div>
+ <div class="plan-li">Last day: warm-up only — read the cheat lines aloud, stay calm</div>
+ <div class="plan-rule">Every day: tap <b>▶ 听老师问</b>, answer OUT LOUD <b>before</b> looking, then <b>看范文 → ▶ 听范文</b> to copy the native rhythm, then <b>record yourself</b> and listen back. 25–30 min/day. 20 practices ≈ Band 6 (CLTA marker advice).</div>
+ <div class="plan-rule" style="background:#eef4ff;border-color:#cfe0ff">✏️ These are <b>model</b> answers — change the details (subjects, hobbies, family) to <b>YOUR own life</b> so they're true and easy to remember.</div></div></details>
+<h2 class="theme">个人 · 自己与家庭 <span class="prio">★ 考试重点</span><span class="theme-en">Personal Identity</span></h2>
+<div class="card" id="card-intro" data-id="intro">
+  <div class="cardtop"><span class="num">1</span>
+    <label class="done"><input type="checkbox" onchange="mark('intro',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">请你先介绍一下你自己。</div><div class="py">qǐng nǐ xiān jiè shào yī xià nǐ zì jǐ。</div><div class="en">Please introduce yourself first.</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-intro',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('intro')">看范文 ▼</button></div>
+  <div class="timer" id="t-intro"></div>
+  <audio id="a-intro" preload="none" src="audio/intro_q.mp3"></audio>
+  <audio id="aa-intro" preload="none" src="audio/intro_a.mp3"></audio>
+  <div class="model" id="m-intro" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-intro',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我是一个比较安静但做事认真的学生。虽然平时不太爱说话，但是我特别喜欢和朋友一起做小组项目，因为大家一起讨论、互相帮助，不但能学得更好，而且让我感觉更自信了。</div><div class="py">wǒ shì yí gè bǐ jiào ān jìng dàn zuò shì rèn zhēn de xué shēng。suī rán píng shí bù tài ài shuō huà，dàn shì wǒ tè bié xǐ huān hé péng yǒu yì qǐ zuò xiǎo zǔ xiàng mù，yīn wèi dà jiā yì qǐ tǎo lùn、hù xiāng bāng zhù，bù dàn néng xué dé gèng hǎo，ér qiě ràng wǒ gǎn jué gèng zì xìn le。</div><div class="en">I’m a quiet but hardworking student. Although I don’t speak much in class, I really enjoy doing group projects with friends because we discuss ideas and help each other — not only does this help me learn better, but it also makes me feel more confident.</div>
+    <div class="vocab"><span class="chip"><b>认真</b> <i>rèn zhēn</i> · serious/hardworking</span><span class="chip"><b>小组项目</b> <i>xiǎo zǔ xiàng mù</i> · group project</span><span class="chip"><b>自信</b> <i>zì xìn</i> · confidence</span></div>
+    <div class="tip">💡 Open with a &#x27;set-the-stage&#x27; sentence (Ms Zhang). Name → age/year → personality → family. This is your warm-up — know it cold.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 你提到小组项目让你更自信，能举一个具体的例子吗？</div><div class="py">nǐ tí dào xiǎo zǔ xiàng mù ràng nǐ gèng zì xìn，néng jǔ yí gè jù tǐ de lì zi ma？</div>
+      <div class="en">You mentioned group projects make you feel more confident — can you give a specific example?</div><div class="hint">提示：Pick one common school task (e.g., preparing a presentation, writing a report) and say what role you played + how you felt before/after.</div></div>
+  </div>
+</div>
+<div class="card" id="card-personality" data-id="personality">
+  <div class="cardtop"><span class="num">2</span>
+    <label class="done"><input type="checkbox" onchange="mark('personality',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你有什么样的性格特点？</div><div class="py">nǐ yǒu shén me yàng de xìng gé tè diǎn？</div><div class="en">What kind of personality do you have?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-personality',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('personality')">看范文 ▼</button></div>
+  <div class="timer" id="t-personality"></div>
+  <audio id="a-personality" preload="none" src="audio/personality_q.mp3"></audio>
+  <audio id="aa-personality" preload="none" src="audio/personality_a.mp3"></audio>
+  <div class="model" id="m-personality" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-personality',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我性格比较开朗，也挺有耐心的。因为平时经常帮同学解答问题，所以老师和朋友都觉得我很可靠；虽然有时候做事慢一点，但是我会坚持把事情做完。最近这半年我一直在练习公开讲话，所以越来越有信心了。</div><div class="py">wǒ xìng gé bǐ jiào kāi lǎng，yě tǐng yǒu nài xīn de。yīn wèi píng shí jīng cháng bāng tóng xué jiě dá wèn tí，suǒ yǐ lǎo shī hé péng yǒu dōu jué de wǒ hěn kě kào；suī rán yǒu shí hòu zuò shì màn yì diǎn，dàn shì wǒ huì jiān chí bǎ shì qíng zuò wán。zuì jìn zhè bàn nián wǒ yì zhí zài liàn xí gōng kāi jiǎng huà，suǒ yǐ yuè lái yuè yǒu xìn xīn le。</div><div class="en">I’m quite outgoing and also patient. Because I often help classmates with their questions, teachers and friends think I’m reliable; although I work a bit slowly sometimes, I always finish what I start. I’ve been practicing public speaking for the past six months, so I’m becoming more confident.</div>
+    <div class="vocab"><span class="chip"><b>开朗</b> <i>kāi lǎng</i> · outgoing</span><span class="chip"><b>耐心</b> <i>nài xīn</i> · patience</span><span class="chip"><b>坚持</b> <i>jiān chí</i> · persist</span></div>
+    <div class="tip">💡 Markers want TRUE personality adjectives (外向/乐观), not activities. Give 2–3 traits, each with a tiny reason.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那你觉得性格会改变吗？</div><div class="py">nà nǐ jué de xìng gé huì gǎi biàn ma？</div>
+      <div class="en">Do you think personality can change?</div><div class="hint">提示：Yes — give one simple reason (e.g., life experiences, learning, growing up) + short example (e.g., &#x27;When I joined the debate club, I became more confident&#x27;)</div></div>
+  </div>
+</div>
+<div class="card" id="card-family" data-id="family">
+  <div class="cardtop"><span class="num">3</span>
+    <label class="done"><input type="checkbox" onchange="mark('family',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">请谈谈你的家庭。你家有些什么人？</div><div class="py">qǐng tán tán nǐ de jiā tíng。nǐ jiā yǒu xiē shén me rén？</div><div class="en">Tell me about your family. Who is in your family?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-family',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('family')">看范文 ▼</button></div>
+  <div class="timer" id="t-family"></div>
+  <audio id="a-family" preload="none" src="audio/family_q.mp3"></audio>
+  <audio id="aa-family" preload="none" src="audio/family_a.mp3"></audio>
+  <div class="model" id="m-family" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-family',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我家有四口人，包括爸爸妈妈、我还有弟弟。虽然我们平时各自忙学习和工作，但是周末经常一起做饭或者散步。因为家人一直支持我，所以我感觉特别有安全感，也慢慢明白了自己想要成为什么样的人了。</div><div class="py">wǒ jiā yǒu sì kǒu rén，bāo kuò bà bà mā mā、wǒ hái yǒu dì di。suī rán wǒ men píng shí gè zì máng xué xí hé gōng zuò，dàn shì zhōu mò jīng cháng yì qǐ zuò fàn huò zhě sàn bù。yīn wèi jiā rén yì zhí zhī chí wǒ，suǒ yǐ wǒ gǎn jué tè bié yǒu ān quán gǎn，yě màn màn míng bái le zì jǐ xiǎng yào chéng wéi shén me yàng de rén le。</div><div class="en">There are four people in my family: my parents, my younger brother, and me. Although we’re all busy with study or work during the week, we often cook meals together or go for walks on weekends. Because my family has always supported me, I feel very secure—and I’m starting to understand who I want to become.</div>
+    <div class="vocab"><span class="chip"><b>支持</b> <i>zhī chí</i> · support</span><span class="chip"><b>周末</b> <i>zhōu mò</i> · weekends</span><span class="chip"><b>安全感</b> <i>ān quán gǎn</i> · sense of security</span></div>
+    <div class="tip">💡 ⚠ Use YOUR real family members. Don&#x27;t just list — add what they do + one line about the relationship (Ms Zhang: go beyond description).</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 你和家人之间有没有什么特别的家庭传统？</div><div class="py">nǐ hé jiā rén zhī jiān yǒu méi yǒu shén me tè bié de jiā tíng chuán tǒng？</div>
+      <div class="en">Do you have any special family traditions?</div><div class="hint">提示：Pick one simple, common tradition (e.g., eating dumplings on Lunar New Year, watching movies together on holidays) — use ‘usually’ or ‘every year’ to show routine, and add one short reason why it matters.</div></div>
+  </div>
+</div>
+<div class="card" id="card-hobbies" data-id="hobbies">
+  <div class="cardtop"><span class="num">4</span>
+    <label class="done"><input type="checkbox" onchange="mark('hobbies',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你有什么爱好？</div><div class="py">nǐ yǒu shén me ài hào？</div><div class="en">What hobbies do you have?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-hobbies',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('hobbies')">看范文 ▼</button></div>
+  <div class="timer" id="t-hobbies"></div>
+  <audio id="a-hobbies" preload="none" src="audio/hobbies_q.mp3"></audio>
+  <audio id="aa-hobbies" preload="none" src="audio/hobbies_a.mp3"></audio>
+  <div class="model" id="m-hobbies" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-hobbies',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我喜欢打篮球，因为不但能锻炼身体，而且可以和朋友一起放松。我每周都去球场打球了，虽然有时候很累，但是觉得很开心。</div><div class="py">wǒ xǐ huān dǎ lán qiú，yīn wèi bù dàn néng duàn liàn shēn tǐ，ér qiě kě yǐ hé péng yǒu yì qǐ fàng sōng。wǒ měi zhōu dōu qù qiú chǎng dǎ qiú le，suī rán yǒu shí hòu hěn lèi，dàn shì jué de hěn kāi xīn。</div><div class="en">I like playing basketball because it not only keeps me fit but also helps me relax with friends. I’ve been going to the court every week, and although it’s sometimes tiring, I feel really happy.</div>
+    <div class="vocab"><span class="chip"><b>锻炼</b> <i>duàn liàn</i> · to exercise</span><span class="chip"><b>放松</b> <i>fàng sōng</i> · to relax</span><span class="chip"><b>虽然…但是</b> <i>suī rán…dàn shì</i> · although…, (but)</span></div>
+    <div class="tip">💡 DAR in action: WHAT you do → then WHY (考试压力大，需要放松). The &#x27;why&#x27; is what lifts you out of Band 2.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 你为什么觉得打篮球比其他运动更有趣？</div><div class="py">nǐ wèi shén me jué de dǎ lán qiú bǐ qí tā yùn dòng gèng yǒu qù？</div>
+      <div class="en">Why do you find basketball more interesting than other sports?</div><div class="hint">提示：Compare briefly: e.g., &#x27;It’s team-based and social — unlike swimming or running, which are usually solo activities.&#x27;</div></div>
+  </div>
+</div>
+<div class="card" id="card-friend" data-id="friend">
+  <div class="cardtop"><span class="num">5</span>
+    <label class="done"><input type="checkbox" onchange="mark('friend',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你的好朋友是什么样的人？</div><div class="py">nǐ de hǎo péng yǒu shì shén me yàng de rén？</div><div class="en">What kind of person is your best friend?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-friend',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('friend')">看范文 ▼</button></div>
+  <div class="timer" id="t-friend"></div>
+  <audio id="a-friend" preload="none" src="audio/friend_q.mp3"></audio>
+  <audio id="aa-friend" preload="none" src="audio/friend_a.mp3"></audio>
+  <div class="model" id="m-friend" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-friend',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我最好的朋友很友善，也特别有责任心。虽然他平时话不多，但是每次我遇到困难，他都会主动帮忙，比如上学期我生病缺课了，他不但帮我记笔记，而且每天放学后还给我讲重点。因为我觉得真正的朋友不是只在开心时在一起，所以我很珍惜这样的友谊。</div><div class="py">wǒ zuì hǎo de péng yǒu hěn yǒu shàn，yě tè bié yǒu zé rèn xīn。suī rán tā píng shí huà bù duō，dàn shì měi cì wǒ yù dào kùn nán，tā dū huì zhǔ dòng bāng máng，bǐ rú shàng xué qī wǒ shēng bìng quē kè le，tā bù dàn bāng wǒ jì bǐ jì，ér qiě měi tiān fàng xué hòu huán gěi wǒ jiǎng zhòng diǎn。yīn wèi wǒ jué de zhēn zhèng de péng yǒu bú shì zhǐ zài kāi xīn shí zài yì qǐ，suǒ yǐ wǒ hěn zhēn xī zhè yàng de yǒu yì。</div><div class="en">My best friend is very kind and also very responsible. Although he’s usually quiet, he always offers help whenever I’m in trouble—for example, last semester when I was sick and missed classes, he not only took notes for me but also explained the key points after school every day. Because I believe real friendship isn’t just about having fun together, I truly value this kind of friendship.</div>
+    <div class="vocab"><span class="chip"><b>责任心</b> <i>zé rèn xīn</i> · responsibility</span><span class="chip"><b>虽然…但是</b> <i>suī rán…dàn shì</i> · although…still</span><span class="chip"><b>不但…而且</b> <i>bù dàn…ér qiě</i> · not only…but also</span></div>
+    <div class="tip">💡 Opening sentence sets the stage. Describe the PERSON (adjectives), then how you met, then why you value them.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那你觉得朋友之间最重要的是什么？</div><div class="py">nà nǐ jué de péng yǒu zhī jiān zuì zhòng yào de shì shén me？</div>
+      <div class="en">What do you think is most important between friends?</div><div class="hint">提示：Say one simple value (e.g., trust, honesty, support) + short reason (e.g., &#x27;because friends need to rely on each other&#x27; or &#x27;without it, friendship won’t last&#x27; ).</div></div>
+  </div>
+</div>
+<div class="card" id="card-friend_type" data-id="friend_type">
+  <div class="cardtop"><span class="num">6</span>
+    <label class="done"><input type="checkbox" onchange="mark('friend_type',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你喜欢什么样的朋友？为什么？</div><div class="py">nǐ xǐ huān shén me yàng de péng yǒu？wèi shén me？</div><div class="en">What kind of friends do you like? Why?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-friend_type',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('friend_type')">看范文 ▼</button></div>
+  <div class="timer" id="t-friend_type"></div>
+  <audio id="a-friend_type" preload="none" src="audio/friend_type_q.mp3"></audio>
+  <audio id="aa-friend_type" preload="none" src="audio/friend_type_a.mp3"></audio>
+  <div class="model" id="m-friend_type" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-friend_type',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我喜欢性格开朗、愿意互相帮助的朋友。因为朋友之间不但要一起开心，而且遇到困难时也要支持彼此，所以我平时正在努力多倾听别人的想法。</div><div class="py">wǒ xǐ huān xìng gé kāi lǎng、yuàn yì hù xiāng bāng zhù de péng yǒu。yīn wèi péng yǒu zhī jiān bù dàn yào yì qǐ kāi xīn，ér qiě yù dào kùn nán shí yě yào zhī chí bǐ cǐ，suǒ yǐ wǒ píng shí zhèng zài nǔ lì duō qīng tīng bié rén de xiǎng fǎ。</div><div class="en">I like friends who are cheerful and willing to help each other. Because friends should not only have fun together, but also support each other during tough times, I’m currently trying to listen more carefully to others’ ideas.</div>
+    <div class="vocab"><span class="chip"><b>开朗</b> <i>kāi lǎng</i> · cheerful</span><span class="chip"><b>帮助</b> <i>bāng zhù</i> · help</span><span class="chip"><b>正在</b> <i>zhèng zài</i> · currently</span></div>
+    <div class="tip">💡 Opinion first (友好/诚实) → why → a REAL example (Will). Naming a real person makes it sound genuine.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那你觉得朋友之间最重要的是信任吗？</div><div class="py">nà nǐ jué de péng yǒu zhī jiān zuì zhòng yào de shì xìn rèn ma？</div>
+      <div class="en">Do you think trust is the most important thing between friends?</div><div class="hint">提示：Yes, because without trust, even cheerful friends can’t share real feelings or rely on each other.</div></div>
+  </div>
+</div><h2 class="theme">学习 · 学校与未来 <span class="prio">★ 考试重点</span><span class="theme-en">Education &amp; Aspirations</span></h2>
+<div class="card" id="card-subjects" data-id="subjects">
+  <div class="cardtop"><span class="num">7</span>
+    <label class="done"><input type="checkbox" onchange="mark('subjects',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你今年学习哪些课？</div><div class="py">nǐ jīn nián xué xí nǎ xiē kè？</div><div class="en">What subjects are you studying this year?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-subjects',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('subjects')">看范文 ▼</button></div>
+  <div class="timer" id="t-subjects"></div>
+  <audio id="a-subjects" preload="none" src="audio/subjects_q.mp3"></audio>
+  <audio id="aa-subjects" preload="none" src="audio/subjects_a.mp3"></audio>
+  <div class="model" id="m-subjects" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-subjects',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我今年学中文、数学、英语和科学四门课。虽然中文有点难，但是我很喜欢读课文和写作文，因为这样能提高我的表达能力。我已经开始准备HSC考试了，所以每天都会复习笔记。</div><div class="py">wǒ jīn nián xué zhōng wén、shù xué、yīng yǔ hé kē xué sì mén kè。suī rán zhōng wén yǒu diǎn nán，dàn shì wǒ hěn xǐ huān dú kè wén hé xiě zuò wén，yīn wèi zhè yàng néng tí gāo wǒ de biǎo dá néng lì。wǒ yǐ jīng kāi shǐ zhǔn bèi H S C kǎo shì le，suǒ yǐ měi tiān dū huì fù xí bǐ jì。</div><div class="en">This year I’m studying Chinese, Maths, English and Science. Although Chinese is a bit difficult, I really enjoy reading texts and writing essays because it helps me improve my expression. I’ve already started preparing for the HSC exam, so I review my notes every day.</div>
+    <div class="vocab"><span class="chip"><b>复习</b> <i>fù xí</i> · review</span><span class="chip"><b>准备</b> <i>zhǔn bèi</i> · prepare</span><span class="chip"><b>虽然…但是</b> <i>suī rán…dàn shì</i> · although…however</span></div>
+    <div class="tip">💡 Name them → say which you like → LINK to your future (Ms Zhang&#x27;s &#x27;go beyond&#x27;). 将来 is your future time-word.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 你最喜欢哪一门课？为什么？</div><div class="py">nǐ zuì xǐ huān nǎ yī mén kè？wèi shén me？</div>
+      <div class="en">Which subject do you like most? Why?</div><div class="hint">提示：Pick one subject from the four mentioned; give one simple reason (e.g., ‘It’s interesting’, ‘I’m good at it’, ‘It helps me in daily life’)</div></div>
+  </div>
+</div>
+<div class="card" id="card-fav_subject" data-id="fav_subject">
+  <div class="cardtop"><span class="num">8</span>
+    <label class="done"><input type="checkbox" onchange="mark('fav_subject',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你最喜欢哪一门课？为什么？</div><div class="py">nǐ zuì xǐ huān nǎ yī mén kè？wèi shén me？</div><div class="en">Which subject do you like most? Why?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-fav_subject',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('fav_subject')">看范文 ▼</button></div>
+  <div class="timer" id="t-fav_subject"></div>
+  <audio id="a-fav_subject" preload="none" src="audio/fav_subject_q.mp3"></audio>
+  <audio id="aa-fav_subject" preload="none" src="audio/fav_subject_a.mp3"></audio>
+  <div class="model" id="m-fav_subject" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-fav_subject',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我最喜欢中文课，因为不但能用中文和朋友聊天，而且能更好地理解中国文化。上学期我参加了学校的中文演讲比赛，虽然有点紧张，但是准备过程让我进步了很多。将来我想继续学中文，所以现在正在每天坚持读一篇中文文章。</div><div class="py">wǒ zuì xǐ huān zhōng wén kè，yīn wèi bù dàn néng yòng zhōng wén hé péng yǒu liáo tiān，ér qiě néng gèng hǎo dì lǐ jiě zhōng guó wén huà。shàng xué qī wǒ cān jiā le xué xiào de zhōng wén yǎn jiǎng bǐ sài，suī rán yǒu diǎn jǐn zhāng，dàn shì zhǔn bèi guò chéng ràng wǒ jìn bù le hěn duō。jiāng lái wǒ xiǎng jì xù xué zhōng wén，suǒ yǐ xiàn zài zhèng zài měi tiān jiān chí dú yī piān zhōng wén wén zhāng。</div><div class="en">I like Chinese class the most because not only can I chat with friends in Chinese, but also I understand Chinese culture better. Last semester I joined the school’s Chinese speech contest — although I felt a bit nervous, the preparation helped me improve a lot. I want to keep studying Chinese in the future, so I’m reading one Chinese article every day now.</div>
+    <div class="vocab"><span class="chip"><b>不但…而且</b> <i>bù dàn…ér qiě</i> · not only… but also</span><span class="chip"><b>正在</b> <i>zhèng zài</i> · currently/doing something now</span><span class="chip"><b>因为…所以</b> <i>yīn wèi…suǒ yǐ</i> · because…so</span></div>
+    <div class="tip">💡 This is the marker&#x27;s MODEL answer shape: subject → reason (teacher) → go beyond (multicultural view) → link to career. Use 第一/第二 to sound organised.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那你觉得中文最难的部分是什么？</div><div class="py">nà nǐ jué de zhōng wén zuì nán de bù fèn shì shén me？</div>
+      <div class="en">What do you think is the most difficult part of learning Chinese?</div><div class="hint">提示：Pick one common challenge (e.g., tones, characters) + give a simple, honest reason + how you’re dealing with it (e.g., &#x27;I practise tones with apps every morning&#x27;).</div></div>
+  </div>
+</div>
+<div class="card" id="card-school" data-id="school">
+  <div class="cardtop"><span class="num">9</span>
+    <label class="done"><input type="checkbox" onchange="mark('school',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你喜欢你的学校吗？</div><div class="py">nǐ xǐ huān nǐ de xué xiào ma？</div><div class="en">Do you like your school?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-school',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('school')">看范文 ▼</button></div>
+  <div class="timer" id="t-school"></div>
+  <audio id="a-school" preload="none" src="audio/school_q.mp3"></audio>
+  <audio id="aa-school" preload="none" src="audio/school_a.mp3"></audio>
+  <div class="model" id="m-school" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-school',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我喜欢我的学校，因为老师很耐心，而且同学之间互相帮助。虽然有时候作业很多，但是我正在慢慢学会更好地安排时间。所以我觉得在这里学习让我进步了不少。</div><div class="py">wǒ xǐ huān wǒ de xué xiào，yīn wèi lǎo shī hěn nài xīn，ér qiě tóng xué zhī jiān hù xiāng bāng zhù。suī rán yǒu shí hòu zuò yè hěn duō，dàn shì wǒ zhèng zài màn màn xué huì gèng hǎo dì ān pái shí jiān。suǒ yǐ wǒ jué de zài zhè lǐ xué xí ràng wǒ jìn bù le bù shǎo。</div><div class="en">I like my school because the teachers are very patient and classmates help each other. Although homework is sometimes heavy, I’m learning to manage my time better. So I feel I’ve improved a lot studying here.</div>
+    <div class="vocab"><span class="chip"><b>耐心</b> <i>nài xīn</i> · patient</span><span class="chip"><b>安排时间</b> <i>ān pái shí jiān</i> · manage time</span><span class="chip"><b>进步</b> <i>jìn bù</i> · improve</span></div>
+    <div class="tip">💡 Pick ONE thing you like (sport) and explain it. Don&#x27;t try to describe everything.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那你希望将来读什么专业或做什么工作？</div><div class="py">nà nǐ xī wàng jiāng lái dú shén me zhuān yè huò zuò shén me gōng zuò？</div>
+      <div class="en">What field of study or job would you like to pursue in the future?</div><div class="hint">提示：Pick one common option (e.g., business, nursing, IT) + simple reason (e.g., &#x27;because it’s useful&#x27; or &#x27;I enjoy helping people&#x27;)</div></div>
+  </div>
+</div>
+<div class="card" id="card-learn_chinese" data-id="learn_chinese">
+  <div class="cardtop"><span class="num">10</span>
+    <label class="done"><input type="checkbox" onchange="mark('learn_chinese',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你对在中学学习汉语有什么看法？</div><div class="py">nǐ duì zài zhōng xué xué xí hàn yǔ yǒu shén me kàn fǎ？</div><div class="en">What are your views on studying Chinese in high school?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-learn_chinese',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('learn_chinese')">看范文 ▼</button></div>
+  <div class="timer" id="t-learn_chinese"></div>
+  <audio id="a-learn_chinese" preload="none" src="audio/learn_chinese_q.mp3"></audio>
+  <audio id="aa-learn_chinese" preload="none" src="audio/learn_chinese_a.mp3"></audio>
+  <div class="model" id="m-learn_chinese" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-learn_chinese',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我觉得学汉语挺有用的，因为不但能和更多人交流，而且对将来找工作也有帮助。我从去年开始上中文课了，虽然有时候语法有点难，但是老师讲得很清楚，所以慢慢就习惯了。</div><div class="py">wǒ jué de xué hàn yǔ tǐng yǒu yòng de，yīn wèi bù dàn néng hé gèng duō rén jiāo liú，ér qiě duì jiāng lái zhǎo gōng zuò yě yǒu bāng zhù。wǒ cóng qù nián kāi shǐ shàng zhōng wén kè le，suī rán yǒu shí hòu yǔ fǎ yǒu diǎn nán，dàn shì lǎo shī jiǎng dé hěn qīng chǔ，suǒ yǐ màn màn jiù xí guàn le。</div><div class="en">I think learning Chinese in high school is quite useful because not only can it help me communicate with more people, but it’s also helpful for future jobs. I’ve been taking Chinese classes since last year; although grammar is sometimes difficult, the teacher explains things clearly, so I’ve gradually gotten used to it.</div>
+    <div class="vocab"><span class="chip"><b>有用</b> <i>yǒu yòng</i> · useful</span><span class="chip"><b>将来</b> <i>jiāng lái</i> · future</span><span class="chip"><b>虽然…但是</b> <i>suī rán…dàn shì</i> · although…however</span></div>
+    <div class="tip">💡 Opinion first (非常有用) → reason → link to your future. 将来/如果 are your time + condition words.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那你觉得哪部分最难？</div><div class="py">nà nǐ jué de nǎ bù fèn zuì nán？</div>
+      <div class="en">What part do you find most difficult?</div><div class="hint">提示：Pick one common challenge (e.g., tones, characters, or speaking fluency) and give a simple, honest reason — e.g., &#x27;Writing characters is hard because there are many strokes and similar-looking ones.&#x27;</div></div>
+  </div>
+</div>
+<div class="card" id="card-after_graduation" data-id="after_graduation">
+  <div class="cardtop"><span class="num">11</span>
+    <label class="done"><input type="checkbox" onchange="mark('after_graduation',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">毕业以后你打算做什么？</div><div class="py">bì yè yǐ hòu nǐ dǎ suàn zuò shén me？</div><div class="en">What do you plan to do after you graduate?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-after_graduation',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('after_graduation')">看范文 ▼</button></div>
+  <div class="timer" id="t-after_graduation"></div>
+  <audio id="a-after_graduation" preload="none" src="audio/after_graduation_q.mp3"></audio>
+  <audio id="aa-after_graduation" preload="none" src="audio/after_graduation_a.mp3"></audio>
+  <div class="model" id="m-after_graduation" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-after_graduation',this,'a')">▶ 听范文</button></div>
+    <div class="zh">毕业后我想去读大学，学习教育专业。因为我觉得当老师不但能帮助学生，而且能让我一直学习新东西。我已经参加过学校组织的支教活动了，所以更确定这是适合我的方向。</div><div class="py">bì yè hòu wǒ xiǎng qù dú dà xué，xué xí jiào yù zhuān yè。yīn wèi wǒ jué de dāng lǎo shī bù dàn néng bāng zhù xué shēng，ér qiě néng ràng wǒ yì zhí xué xí xīn dōng xī。wǒ yǐ jīng cān jiā guò xué xiào zǔ zhī de zhī jiào huó dòng le，suǒ yǐ gèng què dìng zhè shì shì hé wǒ de fāng xiàng。</div><div class="en">After graduation, I plan to go to university and study education. Because I think being a teacher not only helps students but also lets me keep learning new things. I’ve already volunteered in a school-organized teaching support activity, so I’m more sure this is the right path for me.</div>
+    <div class="vocab"><span class="chip"><b>毕业</b> <i>bì yè</i> · graduation</span><span class="chip"><b>打算</b> <i>dǎ suàn</i> · plan to</span><span class="chip"><b>已经...了</b> <i>yǐ jīng...le</i> · have already...</span></div>
+    <div class="tip">💡 打算/想/将来 are your FUTURE words — essential for the tense mark. Give a plan + a reason + a realistic note.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 你为什么觉得教书能让你一直学习新东西？</div><div class="py">nǐ wèi shén me jué de jiāo shū néng ràng nǐ yì zhí xué xí xīn dōng xī？</div>
+      <div class="en">Why do you think teaching allows you to keep learning new things?</div><div class="hint">提示：Teaching requires preparing lessons, understanding students’ different needs, and staying updated with new teaching methods and subjects.</div></div>
+  </div>
+</div>
+<div class="card" id="card-university" data-id="university">
+  <div class="cardtop"><span class="num">12</span>
+    <label class="done"><input type="checkbox" onchange="mark('university',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你明年打算上大学吗？为什么？</div><div class="py">nǐ míng nián dǎ suàn shàng dà xué ma？wèi shén me？</div><div class="en">Do you plan to go to university next year? Why?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-university',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('university')">看范文 ▼</button></div>
+  <div class="timer" id="t-university"></div>
+  <audio id="a-university" preload="none" src="audio/university_q.mp3"></audio>
+  <audio id="aa-university" preload="none" src="audio/university_a.mp3"></audio>
+  <div class="model" id="m-university" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-university',this,'a')">▶ 听范文</button></div>
+    <div class="zh">是的，我明年打算上大学。因为我想学计算机专业，所以正在自学一些编程知识。虽然现在有点难，但是我觉得将来工作会更有机会。</div><div class="py">shì de，wǒ míng nián dǎ suàn shàng dà xué。yīn wèi wǒ xiǎng xué jì suàn jī zhuān yè，suǒ yǐ zhèng zài zì xué yī xiē biān chéng zhī shí。suī rán xiàn zài yǒu diǎn nán，dàn shì wǒ jué de jiāng lái gōng zuò huì gèng yǒu jī huì。</div><div class="en">Yes, I plan to go to university next year. Because I want to study computer science, I am teaching myself some programming skills. Although it’s a bit difficult now, I think it will give me better job opportunities in the future.</div>
+    <div class="vocab"><span class="chip"><b>打算</b> <i>dǎ suàn</i> · plan to</span><span class="chip"><b>正在</b> <i>zhèng zài</i> · am currently</span><span class="chip"><b>虽然…但是</b> <i>suī rán…dàn shì</i> · although…however</span></div>
+    <div class="tip">💡 打算/将来/会 are your FUTURE words. Plan → reason (links to your career) → resolve to work hard.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那如果没被录取，你会怎么办？</div><div class="py">nà rú guǒ méi bèi lù qǔ，nǐ huì zěn me bàn？</div>
+      <div class="en">What would you do if you weren’t accepted?</div><div class="hint">提示：Say one realistic alternative (e.g., gap year, TAFE course, part-time work + reapply) and keep it simple: &#x27;I’d take a gap year and try again next year.&#x27;</div></div>
+  </div>
+</div><h2 class="theme">生活 · 运动与休闲 <span class="prio">★ 考试重点</span><span class="theme-en">Recreation &amp; Leisure</span></h2>
+<div class="card" id="card-sport" data-id="sport">
+  <div class="cardtop"><span class="num">13</span>
+    <label class="done"><input type="checkbox" onchange="mark('sport',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你对什么运动有兴趣？为什么？</div><div class="py">nǐ duì shén me yùn dòng yǒu xìng qù？wèi shén me？</div><div class="en">What sport are you interested in? Why?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-sport',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('sport')">看范文 ▼</button></div>
+  <div class="timer" id="t-sport"></div>
+  <audio id="a-sport" preload="none" src="audio/sport_q.mp3"></audio>
+  <audio id="aa-sport" preload="none" src="audio/sport_a.mp3"></audio>
+  <div class="model" id="m-sport" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-sport',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我对打篮球有兴趣，因为不但能锻炼身体，而且可以和朋友一起玩得开心。我去年开始每周打两次，所以现在跑得比以前快多了。虽然有时候会累，但是运动完感觉特别放松。</div><div class="py">wǒ duì dǎ lán qiú yǒu xìng qù，yīn wèi bù dàn néng duàn liàn shēn tǐ，ér qiě kě yǐ hé péng yǒu yì qǐ wán dé kāi xīn。wǒ qù nián kāi shǐ měi zhōu dǎ liǎng cì，suǒ yǐ xiàn zài pǎo dé bǐ yǐ qián kuài duō le。suī rán yǒu shí hòu huì lèi，dàn shì yùn dòng wán gǎn jué tè bié fàng sōng。</div><div class="en">I’m interested in playing basketball because it not only keeps me physically fit but also lets me have fun with friends. I started playing twice a week last year, so I’m much faster now than before. Although I sometimes feel tired, I feel really relaxed after exercising.</div>
+    <div class="vocab"><span class="chip"><b>锻炼</b> <i>duàn liàn</i> · exercise</span><span class="chip"><b>放松</b> <i>fàng sōng</i> · relax</span><span class="chip"><b>以前</b> <i>yǐ qián</i> · before</span></div>
+    <div class="tip">💡 Direct answer (橄榄球) → detail (team, 3×/week) → why → extend with 除了…以外. That&#x27;s a full Band 3–4 answer.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 你平时和谁一起打球？</div><div class="py">nǐ píng shí hé shuí yì qǐ dǎ qiú？</div>
+      <div class="en">Who do you usually play with?</div><div class="hint">提示：Say ‘mostly classmates’ or ‘friends from school’ — keep it general and add one simple reason like ‘because we have free time after class’.</div></div>
+  </div>
+</div>
+<div class="card" id="card-weekend" data-id="weekend">
+  <div class="cardtop"><span class="num">14</span>
+    <label class="done"><input type="checkbox" onchange="mark('weekend',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">周末你常做什么？</div><div class="py">zhōu mò nǐ cháng zuò shén me？</div><div class="en">What do you usually do on weekends?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-weekend',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('weekend')">看范文 ▼</button></div>
+  <div class="timer" id="t-weekend"></div>
+  <audio id="a-weekend" preload="none" src="audio/weekend_q.mp3"></audio>
+  <audio id="aa-weekend" preload="none" src="audio/weekend_a.mp3"></audio>
+  <div class="model" id="m-weekend" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-weekend',this,'a')">▶ 听范文</button></div>
+    <div class="zh">周末我常去公园散步或者在家看书。因为天气好的时候，我喜欢户外活动，所以经常约朋友一起去；虽然有时候也想宅在家里休息，但是运动完反而更精神。最近我开始学骑自行车了，不但锻炼身体，而且能放松心情。</div><div class="py">zhōu mò wǒ cháng qù gōng yuán sàn bù huò zhě zài jiā kàn shū。yīn wèi tiān qì hǎo de shí hòu，wǒ xǐ huān hù wài huó dòng，suǒ yǐ jīng cháng yuē péng yǒu yì qǐ qù；suī rán yǒu shí hòu yě xiǎng zhái zài jiā lǐ xiū xī，dàn shì yùn dòng wán fǎn ér gèng jīng shén。zuì jìn wǒ kāi shǐ xué qí zì xíng chē le，bù dàn duàn liàn shēn tǐ，ér qiě néng fàng sōng xīn qíng。</div><div class="en">On weekends, I usually go for a walk in the park or read books at home. Because I enjoy outdoor activities when the weather is nice, I often meet friends there; although I sometimes want to stay home and rest, exercising actually makes me feel more energetic. Recently, I’ve started learning to ride a bike—not only does it help me stay fit, but it also helps me relax.</div>
+    <div class="vocab"><span class="chip"><b>散步</b> <i>sàn bù</i> · go for a walk</span><span class="chip"><b>放松</b> <i>fàng sōng</i> · relax</span><span class="chip"><b>最近</b> <i>zuì jìn</i> · recently</span></div>
+    <div class="tip">💡 如果…就 lets you give TWO scenarios (good/bad weather) from one question — instant depth. End with a reflection (relax).</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那你最喜欢哪种放松方式？为什么？</div><div class="py">nà nǐ zuì xǐ huān nǎ zhǒng fàng sōng fāng shì？wèi shén me？</div>
+      <div class="en">What’s your favourite way to relax, and why?</div><div class="hint">提示：Pick one activity from your answer (e.g., walking or cycling); give a simple reason like ‘it’s quiet’, ‘I don’t need much time’, or ‘it helps me forget school stress’.</div></div>
+  </div>
+</div>
+<div class="card" id="card-birthday" data-id="birthday">
+  <div class="cardtop"><span class="num">15</span>
+    <label class="done"><input type="checkbox" onchange="mark('birthday',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你怎么过你的生日？</div><div class="py">nǐ zěn me guò nǐ de shēng rì？</div><div class="en">How do you celebrate your birthday?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-birthday',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('birthday')">看范文 ▼</button></div>
+  <div class="timer" id="t-birthday"></div>
+  <audio id="a-birthday" preload="none" src="audio/birthday_q.mp3"></audio>
+  <audio id="aa-birthday" preload="none" src="audio/birthday_a.mp3"></audio>
+  <div class="model" id="m-birthday" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-birthday',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我通常和家人一起过生日，比如吃顿家常饭、切蛋糕。因为平时学习很忙，所以生日那天我会特意放松一下，看看电影或者散散步。虽然蛋糕不是每年都买，但是我每年都记得这个日子了。</div><div class="py">wǒ tōng cháng hé jiā rén yì qǐ guò shēng rì，bǐ rú chī dùn jiā cháng fàn、qiè dàn gāo。yīn wèi píng shí xué xí hěn máng，suǒ yǐ shēng rì nà tiān wǒ huì tè yì fàng sōng yī xià，kàn kàn diàn yǐng huò zhě sàn sàn bù。suī rán dàn gāo bú shì měi nián dōu mǎi，dàn shì wǒ měi nián dōu jì de zhè ge rì zi le。</div><div class="en">I usually celebrate my birthday with my family, like having a home-cooked meal and cutting a cake. Because I’m usually busy with study, I make a point to relax that day—watching a movie or going for a walk. Although I don’t buy cake every year, I’ve remembered this date every year.</div>
+    <div class="vocab"><span class="chip"><b>放松</b> <i>fàng sōng</i> · relax</span><span class="chip"><b>特意</b> <i>tè yì</i> · on purpose</span><span class="chip"><b>记得</b> <i>jì de</i> · remember</span></div>
+    <div class="tip">💡 Tell a PAST birthday with 了 (去了/看了) — this proves you can use past time, which markers specifically check.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 你更喜欢和家人还是朋友一起过生日？为什么？</div><div class="py">nǐ gèng xǐ huān hé jiā rén hái shì péng yǒu yì qǐ guò shēng rì？wèi shén me？</div>
+      <div class="en">Do you prefer celebrating your birthday with family or friends? Why?</div><div class="hint">提示：Choose one; give simple reason linked to comfort, convenience, or tradition (e.g., &#x27;With family — it’s quieter and feels more meaningful.&#x27;</div></div>
+  </div>
+</div>
+<div class="card" id="card-shopping" data-id="shopping">
+  <div class="cardtop"><span class="num">16</span>
+    <label class="done"><input type="checkbox" onchange="mark('shopping',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你常常去买东西吗？你买什么东西？</div><div class="py">nǐ cháng cháng qù mǎi dōng xī ma？nǐ mǎi shén me dōng xī？</div><div class="en">Do you often go shopping? What do you buy?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-shopping',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('shopping')">看范文 ▼</button></div>
+  <div class="timer" id="t-shopping"></div>
+  <audio id="a-shopping" preload="none" src="audio/shopping_q.mp3"></audio>
+  <audio id="aa-shopping" preload="none" src="audio/shopping_a.mp3"></audio>
+  <div class="model" id="m-shopping" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-shopping',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我不常常去买东西，因为平时学习很忙，所以周末才偶尔去超市买些零食和日用品。虽然有时候想多买点喜欢的东西，但是我会控制自己，毕竟钱要花在更需要的地方。</div><div class="py">wǒ bù cháng cháng qù mǎi dōng xī，yīn wèi píng shí xué xí hěn máng，suǒ yǐ zhōu mò cái ǒu ěr qù chāo shì mǎi xiē líng shí hé rì yòng pǐn。suī rán yǒu shí hòu xiǎng duō mǎi diǎn xǐ huān de dōng xī，dàn shì wǒ huì kòng zhì zì jǐ，bì jìng qián yào huā zài gèng xū yào de dì fāng。</div><div class="en">I don’t shop often because I’m very busy with study, so I only go to the supermarket occasionally on weekends to buy snacks and daily necessities. Although I sometimes want to buy more things I like, I control myself because money should be spent on more important needs.</div>
+    <div class="vocab"><span class="chip"><b>偶尔</b> <i>ǒu ěr</i> · occasionally</span><span class="chip"><b>控制</b> <i>kòng zhì</i> · control</span><span class="chip"><b>需要</b> <i>xū yào</i> · need</span></div>
+    <div class="tip">💡 You can give a small contrast (买东西 累 vs 网购 方便) — comparing two things adds range markers reward.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那你最近一次买东西是什么时候？买了什么？</div><div class="py">nà nǐ zuì jìn yī cì mǎi dōng xī shì shén me shí hòu？mǎi le shén me？</div>
+      <div class="en">When was the last time you went shopping? What did you buy?</div><div class="hint">提示：Say when (e.g., last Saturday), where (e.g., local supermarket), and what (e.g., bread, juice, toothpaste) — keep it simple and match your original answer.</div></div>
+  </div>
+</div>
+<div class="card" id="card-freetime" data-id="freetime">
+  <div class="cardtop"><span class="num">17</span>
+    <label class="done"><input type="checkbox" onchange="mark('freetime',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你有空的时候喜欢做什么？</div><div class="py">nǐ yǒu kòng de shí hòu xǐ huān zuò shén me？</div><div class="en">What do you like to do in your free time?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-freetime',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('freetime')">看范文 ▼</button></div>
+  <div class="timer" id="t-freetime"></div>
+  <audio id="a-freetime" preload="none" src="audio/freetime_q.mp3"></audio>
+  <audio id="aa-freetime" preload="none" src="audio/freetime_a.mp3"></audio>
+  <div class="model" id="m-freetime" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-freetime',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我有空的时候喜欢去公园散步或者在家看书。因为天气好的时候，我经常和朋友一起去公园，不但能呼吸新鲜空气，而且能放松心情；最近我也开始尝试学做简单的菜了。</div><div class="py">wǒ yǒu kòng de shí hòu xǐ huān qù gōng yuán sàn bù huò zhě zài jiā kàn shū。yīn wèi tiān qì hǎo de shí hòu，wǒ jīng cháng hé péng yǒu yì qǐ qù gōng yuán，bù dàn néng hū xī xīn xiān kōng qì，ér qiě néng fàng sōng xīn qíng；zuì jìn wǒ yě kāi shǐ cháng shì xué zuò jiǎn dān de cài le。</div><div class="en">When I have free time, I like to take a walk in the park or read books at home. Because the weather is nice, I often go to the park with friends—not only can I breathe fresh air, but I also feel relaxed; recently, I’ve started trying to cook simple dishes.</div>
+    <div class="vocab"><span class="chip"><b>散步</b> <i>sàn bù</i> · take a walk</span><span class="chip"><b>放松</b> <i>fàng sōng</i> · relax</span><span class="chip"><b>最近</b> <i>zuì jìn</i> · recently</span></div>
+    <div class="tip">💡 List 2–3 things → then the REFLECTION (why: to relax from Year 12 stress). The reflection is the part Band-2 students skip.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那你最喜欢做的那道菜是什么？</div><div class="py">nà nǐ zuì xǐ huān zuò de nà dào cài shì shén me？</div>
+      <div class="en">What’s your favourite dish to cook?</div><div class="hint">提示：Pick one common dish (e.g., fried egg, noodles) + say why it’s easy/fun — no need for details.</div></div>
+  </div>
+</div>
+<div class="card" id="card-restaurant" data-id="restaurant">
+  <div class="cardtop"><span class="num">18</span>
+    <label class="done"><input type="checkbox" onchange="mark('restaurant',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你喜欢上什么饭馆吃饭？为什么？</div><div class="py">nǐ xǐ huān shàng shén me fàn guǎn chī fàn？wèi shén me？</div><div class="en">What restaurants do you like to eat at? Why?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-restaurant',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('restaurant')">看范文 ▼</button></div>
+  <div class="timer" id="t-restaurant"></div>
+  <audio id="a-restaurant" preload="none" src="audio/restaurant_q.mp3"></audio>
+  <audio id="aa-restaurant" preload="none" src="audio/restaurant_a.mp3"></audio>
+  <div class="model" id="m-restaurant" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-restaurant',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我喜欢去家附近的快餐店吃饭，因为那里上菜快、价格也便宜。虽然菜单比较简单，但是我已经去过好几次了，所以很熟悉哪些套餐最划算。</div><div class="py">wǒ xǐ huān qù jiā fù jìn de kuài cān diàn chī fàn，yīn wèi nà lǐ shàng cài kuài、jià gé yě pián yi。suī rán cài dān bǐ jiào jiǎn dān，dàn shì wǒ yǐ jīng qù guò hǎo jǐ cì le，suǒ yǐ hěn shú xī nǎ xiē tào cān zuì huá suàn。</div><div class="en">I like eating at the fast-food restaurant near my home because the food comes quickly and it’s cheap. Although the menu is simple, I’ve been there several times, so I already know which combo meals offer the best value.</div>
+    <div class="vocab"><span class="chip"><b>附近</b> <i>fù jìn</i> · nearby</span><span class="chip"><b>便宜</b> <i>pián yi</i> · cheap</span><span class="chip"><b>已经...了</b> <i>yǐ jīng...le</i> · have already...</span></div>
+    <div class="tip">💡 Which place → why (taste + price) → what you order → a small 虽然…但是 concession to add range.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那你觉得在家做饭和去饭馆吃饭，哪个更轻松？</div><div class="py">nà nǐ jué de zài jiā zuò fàn hé qù fàn guǎn chī fàn，nǎ ge gèng qīng sōng？</div>
+      <div class="en">Which do you think is easier—cooking at home or eating out?</div><div class="hint">提示：Say one clear preference + simple reason (e.g., &#x27;Eating out is easier because I don’t have to wash dishes or plan meals.&#x27;)</div></div>
+  </div>
+</div><h2 class="theme">日常生活 <span class="prio">★ 考试重点</span><span class="theme-en">Personal World · Daily Life</span></h2>
+<div class="card" id="card-daily" data-id="daily">
+  <div class="cardtop"><span class="num">19</span>
+    <label class="done"><input type="checkbox" onchange="mark('daily',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">请说一说你平常的一天。</div><div class="py">qǐng shuō yī shuō nǐ píng cháng de yī tiān。</div><div class="en">Tell me about a typical day for you.</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-daily',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('daily')">看范文 ▼</button></div>
+  <div class="timer" id="t-daily"></div>
+  <audio id="a-daily" preload="none" src="audio/daily_q.mp3"></audio>
+  <audio id="aa-daily" preload="none" src="audio/daily_a.mp3"></audio>
+  <div class="model" id="m-daily" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-daily',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我平常的一天从早上七点开始，先吃早餐，然后去上学。因为学校离家不远，所以我通常步行过去，不但锻炼身体，而且不担心迟到。放学后我经常复习功课，最近正在准备期中考试。</div><div class="py">wǒ píng cháng de yī tiān cóng zǎo shàng qī diǎn kāi shǐ，xiān chī zǎo cān，rán hòu qù shàng xué。yīn wèi xué xiào lí jiā bù yuǎn，suǒ yǐ wǒ tōng cháng bù xíng guò qù，bù dàn duàn liàn shēn tǐ，ér qiě bù dān xīn chí dào。fàng xué hòu wǒ jīng cháng fù xí gōng kè，zuì jìn zhèng zài zhǔn bèi qī zhōng kǎo shì。</div><div class="en">My usual day starts at 7 a.m. — I have breakfast first, then go to school. Because my school is close to home, I usually walk there; not only does it help me exercise, but also means I’m never late. After school, I often review my lessons, and right now I’m preparing for mid-term exams.</div>
+    <div class="vocab"><span class="chip"><b>步行</b> <i>bù xíng</i> · walk</span><span class="chip"><b>复习</b> <i>fù xí</i> · review</span><span class="chip"><b>准备</b> <i>zhǔn bèi</i> · prepare</span></div>
+    <div class="tip">💡 Use TIME-SEQUENCE words (先…然后 / 以后 / 一般) to order your day — they make you sound fluent and organised.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 你最喜欢一天中的哪个时间段？为什么？</div><div class="py">nǐ zuì xǐ huān yī tiān zhōng de nǎ ge shí jiān duàn？wèi shén me？</div>
+      <div class="en">Which part of your day do you enjoy most? Why?</div><div class="hint">提示：Pick one time (e.g., after school), name a simple activity (e.g., listening to music / chatting with friends), and give one short reason (e.g., &#x27;it helps me relax&#x27; or &#x27;I feel free then&#x27;)</div></div>
+  </div>
+</div><h2 class="theme">打工经验 <span class="prio">★ 考试重点</span><span class="theme-en">Personal World · Work</span></h2>
+<div class="card" id="card-parttime" data-id="parttime">
+  <div class="cardtop"><span class="num">20</span>
+    <label class="done"><input type="checkbox" onchange="mark('parttime',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你打过工吗？请说一说你的打工经验。</div><div class="py">nǐ dǎ guò gōng ma？qǐng shuō yī shuō nǐ de dǎ gōng jīng yàn。</div><div class="en">Have you done part-time work? Tell me about your experience.</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-parttime',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('parttime')">看范文 ▼</button></div>
+  <div class="timer" id="t-parttime"></div>
+  <audio id="a-parttime" preload="none" src="audio/parttime_q.mp3"></audio>
+  <audio id="aa-parttime" preload="none" src="audio/parttime_a.mp3"></audio>
+  <div class="model" id="m-parttime" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-parttime',this,'a')">▶ 听范文</button></div>
+    <div class="zh">打过工，我在咖啡店做过兼职。因为工作时间比较灵活，所以我能兼顾学习和打工，虽然有时候很累，但是学会了怎么跟顾客沟通。现在我已经不做了，但那段经历让我更理解工作的责任了。</div><div class="py">dǎ guò gōng，wǒ zài kā fēi diàn zuò guò jiān zhí。yīn wèi gōng zuò shí jiān bǐ jiào líng huó，suǒ yǐ wǒ néng jiān gù xué xí hé dǎ gōng，suī rán yǒu shí hòu hěn lèi，dàn shì xué huì le zěn me gēn gù kè gōu tōng。xiàn zài wǒ yǐ jīng bù zuò le，dàn nà duàn jīng lì ràng wǒ gèng lǐ jiě gōng zuò de zé rèn le。</div><div class="en">Yes, I’ve worked part-time at a café. Because the working hours were flexible, I could balance study and work, although it was sometimes tiring, I learned how to communicate with customers. I’m no longer working there, but that experience helped me understand work responsibility better.</div>
+    <div class="vocab"><span class="chip"><b>兼职</b> <i>jiān zhí</i> · part-time job</span><span class="chip"><b>灵活</b> <i>líng huó</i> · flexible</span><span class="chip"><b>责任</b> <i>zé rèn</i> · responsibility</span></div>
+    <div class="tip">💡 打过工 / 习惯了 — 过 for experience, 了 for change. Then a reflection: what you LEARNT. Markers love a reflection.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那你从这份工作中学到了什么最重要的技能？</div><div class="py">nà nǐ cóng zhè fèn gōng zuò zhōng xué dào le shén me zuì zhòng yào de jì néng？</div>
+      <div class="en">What’s the most important skill you learned from this job?</div><div class="hint">提示：Pick one simple skill (e.g., time management / communication / teamwork) + give a short real-life example (e.g., &#x27;I scheduled shifts around exams&#x27; or &#x27;I asked politely when customers didn’t understand me&#x27;).</div></div>
+  </div>
+</div><h2 class="theme">工作 · 将来的职业 <span class="theme-en">The changing world · Work</span></h2>
+<div class="card" id="card-w_interest" data-id="w_interest">
+  <div class="cardtop"><span class="num">21</span>
+    <label class="done"><input type="checkbox" onchange="mark('w_interest',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你对什么工作有兴趣？为什么？</div><div class="py">nǐ duì shén me gōng zuò yǒu xìng qù？wèi shén me？</div><div class="en">What kind of work are you interested in? Why?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-w_interest',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('w_interest')">看范文 ▼</button></div>
+  <div class="timer" id="t-w_interest"></div>
+  <audio id="a-w_interest" preload="none" src="audio/w_interest_q.mp3"></audio>
+  <audio id="aa-w_interest" preload="none" src="audio/w_interest_a.mp3"></audio>
+  <div class="model" id="m-w_interest" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-w_interest',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我对做软件工程师有兴趣，因为现在很多人都在用手机App，所以这个工作很有前途。我去年开始学编程了，虽然有点难，但是我觉得只要坚持练习，将来一定能做得更好。</div><div class="py">wǒ duì zuò ruǎn jiàn gōng chéng shī yǒu xìng qù，yīn wèi xiàn zài hěn duō rén dōu zài yòng shǒu jī A p p，suǒ yǐ zhè ge gōng zuò hěn yǒu qián tú。wǒ qù nián kāi shǐ xué biān chéng le，suī rán yǒu diǎn nán，dàn shì wǒ jué de zhǐ yào jiān chí liàn xí，jiāng lái yí dìng néng zuò dé gèng hǎo。</div><div class="en">I’m interested in becoming a software engineer because many people use mobile apps nowadays, so this job has good prospects. I started learning programming last year—although it’s a bit difficult, I think I’ll definitely improve if I keep practising.</div>
+    <div class="vocab"><span class="chip"><b>前途</b> <i>qián tú</i> · prospects</span><span class="chip"><b>坚持</b> <i>jiān chí</i> · persist</span><span class="chip"><b>练习</b> <i>liàn xí</i> · practice</span></div>
+    <div class="tip">💡 Direct answer (做生意) → reason linked to family (因为…所以) → 虽然…但是 → future plan (将来…想). Family link makes it personal and believable.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那你觉得学编程最难的地方是什么？</div><div class="py">nà nǐ jué de xué biān chéng zuì nán de dì fāng shì shén me？</div>
+      <div class="en">What do you find most difficult about learning programming?</div><div class="hint">提示：Say one simple challenge (e.g., ‘understanding coding logic’ or ‘remembering syntax’) + how you’re dealing with it (e.g., ‘I practise small exercises every day’).</div></div>
+  </div>
+</div>
+<div class="card" id="card-w_father" data-id="w_father">
+  <div class="cardtop"><span class="num">22</span>
+    <label class="done"><input type="checkbox" onchange="mark('w_father',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你爸爸做什么工作？</div><div class="py">nǐ bà bà zuò shén me gōng zuò？</div><div class="en">What work does your father do?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-w_father',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('w_father')">看范文 ▼</button></div>
+  <div class="timer" id="t-w_father"></div>
+  <audio id="a-w_father" preload="none" src="audio/w_father_q.mp3"></audio>
+  <audio id="aa-w_father" preload="none" src="audio/w_father_a.mp3"></audio>
+  <div class="model" id="m-w_father" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-w_father',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我爸爸在工厂做技术工人。因为工厂这几年引进了新机器，所以他正在学习怎么操作智能设备。虽然工作比以前忙，但是他觉得学新东西很有意思，而且将来能更好地适应变化。</div><div class="py">wǒ bà bà zài gōng chǎng zuò jì shù gōng rén。yīn wèi gōng chǎng zhè jǐ nián yǐn jìn le xīn jī qì，suǒ yǐ tā zhèng zài xué xí zěn me cāo zuò zhì néng shè bèi。suī rán gōng zuò bǐ yǐ qián máng，dàn shì tā jué de xué xīn dōng xī hěn yǒu yì si，ér qiě jiāng lái néng gèng hǎo dì shì yìng biàn huà。</div><div class="en">My dad works as a technician in a factory. Because the factory has introduced new machines recently, he is learning how to operate smart equipment. Although his job is busier than before, he finds learning new things interesting, and it will also help him adapt better to changes in the future.</div>
+    <div class="vocab"><span class="chip"><b>正在</b> <i>zhèng zài</i> · is currently (doing)</span><span class="chip"><b>因为…所以</b> <i>yīn wèi…suǒ yǐ</i> · because…so</span><span class="chip"><b>将来</b> <i>jiāng lái</i> · in the future</span></div>
+    <div class="tip">💡 State the job → a detail (busy, late) → 虽然…但是 → reflection (role model). The 榜样 reflection is exactly the &#x27;go beyond description&#x27; markers want.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那你觉得你将来想从事什么样的工作？</div><div class="py">nà nǐ jué de nǐ jiāng lái xiǎng cóng shì shén me yàng de gōng zuò？</div>
+      <div class="en">What kind of job would you like to have in the future?</div><div class="hint">提示：Pick a common job (e.g., teacher, nurse, IT worker); mention one simple reason (e.g., &#x27;I want to help people&#x27; or &#x27;It’s stable and growing&#x27;) — keep it general and positive.</div></div>
+  </div>
+</div>
+<div class="card" id="card-w_mother" data-id="w_mother">
+  <div class="cardtop"><span class="num">23</span>
+    <label class="done"><input type="checkbox" onchange="mark('w_mother',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你妈妈做什么工作？</div><div class="py">nǐ mā mā zuò shén me gōng zuò？</div><div class="en">What work does your mother do?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-w_mother',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('w_mother')">看范文 ▼</button></div>
+  <div class="timer" id="t-w_mother"></div>
+  <audio id="a-w_mother" preload="none" src="audio/w_mother_q.mp3"></audio>
+  <audio id="aa-w_mother" preload="none" src="audio/w_mother_a.mp3"></audio>
+  <div class="model" id="m-w_mother" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-w_mother',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我妈妈在一家医院当护士。因为工作很忙，所以她经常加班，而且最近还在学习新的护理课程了。虽然辛苦，但是她觉得帮助病人很有意义。</div><div class="py">wǒ mā mā zài yī jiā yī yuàn dāng hù shì。yīn wèi gōng zuò hěn máng，suǒ yǐ tā jīng cháng jiā bān，ér qiě zuì jìn hái zài xué xí xīn de hù lǐ kè chéng le。suī rán xīn kǔ，dàn shì tā jué de bāng zhù bìng rén hěn yǒu yì yì。</div><div class="en">My mum works as a nurse in a hospital. Because her job is very busy, she often works overtime, and she’s also studying a new nursing course recently. Although it’s tiring, she feels it’s very meaningful to help patients.</div>
+    <div class="vocab"><span class="chip"><b>护士</b> <i>hù shì</i> · nurse</span><span class="chip"><b>加班</b> <i>jiā bān</i> · work overtime</span><span class="chip"><b>有意义</b> <i>yǒu yì yì</i> · meaningful</span></div>
+    <div class="tip">💡 Job → 2 traits → 虽然…但是 (busy but caring) → reflection (又…又…). Adding personality, not just the job title, is what lifts this answer.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 你爸爸或家里其他人也从事类似的工作吗？</div><div class="py">nǐ bà bà huò jiā lǐ qí tā rén yě cóng shì lèi sì de gōng zuò ma？</div>
+      <div class="en">Does your dad or another family member do similar work?</div><div class="hint">提示：Say yes/no + one simple reason (e.g., &#x27;Yes, my dad is a teacher — because he also likes helping people.&#x27; or &#x27;No, he works in an office — his job is more about paperwork.&#x27;)</div></div>
+  </div>
+</div>
+<div class="card" id="card-w_future" data-id="w_future">
+  <div class="cardtop"><span class="num">24</span>
+    <label class="done"><input type="checkbox" onchange="mark('w_future',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你以后想做什么工作？为什么？</div><div class="py">nǐ yǐ hòu xiǎng zuò shén me gōng zuò？wèi shén me？</div><div class="en">What work do you want to do in the future? Why?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-w_future',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('w_future')">看范文 ▼</button></div>
+  <div class="timer" id="t-w_future"></div>
+  <audio id="a-w_future" preload="none" src="audio/w_future_q.mp3"></audio>
+  <audio id="aa-w_future" preload="none" src="audio/w_future_a.mp3"></audio>
+  <div class="model" id="m-w_future" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-w_future',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我将来想做一名护士，因为这份工作不但能帮助别人，而且需要细心和耐心。我已经在医院做过一次志愿者，所以更确定了这个选择。虽然工作有时很累，但是我喜欢照顾他人、看到病人慢慢康复的感觉。</div><div class="py">wǒ jiāng lái xiǎng zuò yī míng hù shì，yīn wèi zhè fèn gōng zuò bù dàn néng bāng zhù bié rén，ér qiě xū yào xì xīn hé nài xīn。wǒ yǐ jīng zài yī yuàn zuò guò yī cì zhì yuàn zhě，suǒ yǐ gèng què dìng le zhè ge xuǎn zé。suī rán gōng zuò yǒu shí hěn lèi，dàn shì wǒ xǐ huān zhào gù tā rén、kàn dào bìng rén màn màn kāng fù de gǎn jué。</div><div class="en">I want to become a nurse in the future because this job not only helps others but also requires care and patience. I have volunteered at a hospital once, so I’m more sure about this choice. Although it can be tiring sometimes, I really enjoy caring for people and seeing patients gradually recover.</div>
+    <div class="vocab"><span class="chip"><b>将来</b> <i>jiāng lái</i> · in the future</span><span class="chip"><b>不但…而且</b> <i>bù dàn…ér qiě</i> · not only… but also</span><span class="chip"><b>过</b> <i>guò</i> · have done (experience)</span></div>
+    <div class="tip">💡 想/将来/会 are all future words — perfect for this question. Answer → reason → 虽然…但是 → concrete goal (own company). Realistic note shows maturity.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 你为什么觉得护士工作需要细心和耐心？</div><div class="py">nǐ wèi shén me jué de hù shì gōng zuò xū yào xì xīn hé nài xīn？</div>
+      <div class="en">Why do you think nursing requires carefulness and patience?</div><div class="hint">提示：Give one simple, concrete example: e.g., &#x27;Because nurses must check medicine doses carefully and stay calm when patients are anxious.&#x27;</div></div>
+  </div>
+</div><h2 class="theme">青少年话题 <span class="theme-en">The changing world · Youth Issues</span></h2>
+<div class="card" id="card-y_partner" data-id="y_partner">
+  <div class="cardtop"><span class="num">25</span>
+    <label class="done"><input type="checkbox" onchange="mark('y_partner',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你有男朋友或女朋友吗？</div><div class="py">nǐ yǒu nán péng yǒu huò nǚ péng yǒu ma？</div><div class="en">Do you have a boyfriend or girlfriend?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-y_partner',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('y_partner')">看范文 ▼</button></div>
+  <div class="timer" id="t-y_partner"></div>
+  <audio id="a-y_partner" preload="none" src="audio/y_partner_q.mp3"></audio>
+  <audio id="aa-y_partner" preload="none" src="audio/y_partner_a.mp3"></audio>
+  <div class="model" id="m-y_partner" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-y_partner',this,'a')">▶ 听范文</button></div>
+    <div class="zh">没有，我目前没有男朋友或女朋友。因为我觉得现在学习任务很重，所以想先把精力放在学业上。虽然朋友之间经常聊到这个话题，但是我正在努力平衡生活和学习，而且也想等将来更成熟一点再考虑恋爱的事情。</div><div class="py">méi yǒu，wǒ mù qián méi yǒu nán péng yǒu huò nǚ péng yǒu。yīn wèi wǒ jué de xiàn zài xué xí rèn wù hěn zhòng，suǒ yǐ xiǎng xiān bǎ jīng lì fàng zài xué yè shàng。suī rán péng yǒu zhī jiān jīng cháng liáo dào zhè ge huà tí，dàn shì wǒ zhèng zài nǔ lì píng héng shēng huó hé xué xí，ér qiě yě xiǎng děng jiāng lái gèng chéng shú yì diǎn zài kǎo lǜ liàn ài de shì qíng。</div><div class="en">No, I don’t have a boyfriend or girlfriend right now. Because my study load is quite heavy, I want to focus on my schoolwork first. Although friends often talk about relationships, I’m trying to balance life and studies, and I also hope to wait until I’m more mature in the future before thinking about dating.</div>
+    <div class="vocab"><span class="chip"><b>目前</b> <i>mù qián</i> · currently</span><span class="chip"><b>因为…所以</b> <i>yīn wèi…suǒ yǐ</i> · because…so</span><span class="chip"><b>正在</b> <i>zhèng zài</i> · am currently doing</span></div>
+    <div class="tip">💡 Honest, simple, and appropriate: 没有 + 因为高三想专心学习. 虽然…但是 + 将来 keeps it mature. Safe topic handled well = easy marks.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那你平时怎么放松自己、缓解学习压力呢？</div><div class="py">nà nǐ píng shí zěn me fàng sōng zì jǐ、huǎn jiě xué xí yā lì ne？</div>
+      <div class="en">How do you usually relax and relieve study stress?</div><div class="hint">提示：Mention one simple, common activity (e.g., listening to music, walking, chatting with friends) + short reason (e.g., &#x27;it helps me clear my mind&#x27;)</div></div>
+  </div>
+</div>
+<div class="card" id="card-y_parents" data-id="y_parents">
+  <div class="cardtop"><span class="num">26</span>
+    <label class="done"><input type="checkbox" onchange="mark('y_parents',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你父母对你交朋友有什么意见？</div><div class="py">nǐ fù mǔ duì nǐ jiāo péng yǒu yǒu shén me yì jiàn？</div><div class="en">What do your parents think about you making friends?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-y_parents',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('y_parents')">看范文 ▼</button></div>
+  <div class="timer" id="t-y_parents"></div>
+  <audio id="a-y_parents" preload="none" src="audio/y_parents_q.mp3"></audio>
+  <audio id="aa-y_parents" preload="none" src="audio/y_parents_a.mp3"></audio>
+  <div class="model" id="m-y_parents" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-y_parents',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我父母觉得交朋友要慎重，因为朋友会影响我的学习和习惯，所以他们希望我多跟积极上进的同学来往。以前他们还提醒过我不要总跟爱玩手机的人一起，现在也支持我参加社团活动认识新朋友。虽然他们有点担心，但是我觉得自己正在学会分辨什么样的朋友对自己有帮助。</div><div class="py">wǒ fù mǔ jué de jiāo péng yǒu yào shèn zhòng，yīn wèi péng yǒu huì yǐng xiǎng wǒ de xué xí hé xí guàn，suǒ yǐ tā men xī wàng wǒ duō gēn jī jí shàng jìn de tóng xué lái wǎng。yǐ qián tā men hái tí xǐng guò wǒ bú yào zǒng gēn ài wán shǒu jī de rén yì qǐ，xiàn zài yě zhī chí wǒ cān jiā shè tuán huó dòng rèn shí xīn péng yǒu。suī rán tā men yǒu diǎn dān xīn，dàn shì wǒ jué de zì jǐ zhèng zài xué huì fēn biàn shén me yàng de péng yǒu duì zì jǐ yǒu bāng zhù。</div><div class="en">My parents think I should be careful about making friends because friends can influence my studies and habits, so they hope I spend more time with classmates who are positive and hardworking. They warned me before not to always hang out with people who play on phones too much, and now they also support me joining clubs to meet new people. Although they’re a bit worried, I feel I’m learning how to tell which friends are actually helpful for me.</div>
+    <div class="vocab"><span class="chip"><b>慎重</b> <i>shèn zhòng</i> · careful</span><span class="chip"><b>影响</b> <i>yǐng xiǎng</i> · influence</span><span class="chip"><b>分辨</b> <i>fēn biàn</i> · tell apart</span></div>
+    <div class="tip">💡 Direct answer (没有意见) → their reasoning → a 但是 condition (good friends, not affect study) → 虽然…但是 (worry but trust). Balanced and natural.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那你最近交了一个新朋友吗？</div><div class="py">nà nǐ zuì jìn jiāo le yí gè xīn péng yǒu ma？</div>
+      <div class="en">Have you made a new friend recently?</div><div class="hint">提示：Say yes/no + simple reason (e.g., &#x27;Yes, at school — we’re in the same art class&#x27; or &#x27;Not yet, but I’m hoping to meet someone in the volunteer group soon.&#x27;)</div></div>
+  </div>
+</div>
+<div class="card" id="card-y_goout" data-id="y_goout">
+  <div class="cardtop"><span class="num">27</span>
+    <label class="done"><input type="checkbox" onchange="mark('y_goout',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">如果你和朋友出去，你们会去哪儿？你们做什么？</div><div class="py">rú guǒ nǐ hé péng yǒu chū qù，nǐ men huì qù nǎ ér？nǐ men zuò shén me？</div><div class="en">If you went out with friends, where would you go and what would you do?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-y_goout',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('y_goout')">看范文 ▼</button></div>
+  <div class="timer" id="t-y_goout"></div>
+  <audio id="a-y_goout" preload="none" src="audio/y_goout_q.mp3"></audio>
+  <audio id="aa-y_goout" preload="none" src="audio/y_goout_a.mp3"></audio>
+  <div class="model" id="m-y_goout" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-y_goout',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我们通常去咖啡馆或者公园，因为那里安静又方便聊天。虽然我最近忙于复习考试，但是每个周末还是会和朋友见面，一起喝咖啡、聊学校和未来 plans。因为大家不但想放松一下，而且也喜欢分享各自的想法和烦恼。</div><div class="py">wǒ men tōng cháng qù kā fēi guǎn huò zhě gōng yuán，yīn wèi nà lǐ ān jìng yòu fāng biàn liáo tiān。suī rán wǒ zuì jìn máng yú fù xí kǎo shì，dàn shì měi gè zhōu mò hái shì huì hé péng yǒu jiàn miàn，yì qǐ hē kā fēi、liáo xué xiào hé wèi lái p l a n s。yīn wèi dà jiā bù dàn xiǎng fàng sōng yī xià，ér qiě yě xǐ huān fēn xiǎng gè zì de xiǎng fǎ hé fán nǎo。</div><div class="en">We usually go to a café or park because they’re quiet and convenient for chatting. Although I’ve been busy studying for exams recently, I still meet friends every weekend to have coffee and talk about school and future plans. Because we not only want to relax but also enjoy sharing our thoughts and worries.</div>
+    <div class="vocab"><span class="chip"><b>虽然...但是</b> <i>suī rán...dàn shì</i> · although...but</span><span class="chip"><b>不但...而且</b> <i>bù dàn...ér qiě</i> · not only...but also</span><span class="chip"><b>最近</b> <i>zuì jìn</i> · recently</span></div>
+    <div class="tip">💡 如果…就 twice gives you TWO scenarios from one question — instant depth. End with a reflection (开心/放松). This is a strong DAR answer.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 你们平时聊天时，最常讨论什么话题？</div><div class="py">nǐ men píng shí liáo tiān shí，zuì cháng tǎo lùn shén me huà tí？</div>
+      <div class="en">What topic do you most often discuss when chatting with friends?</div><div class="hint">提示：Mention one common youth issue (e.g., study stress, future uncertainty, social media) + simple reason (e.g., &#x27;because it affects all of us&#x27; or &#x27;it’s something we face every day&#x27;)</div></div>
+  </div>
+</div>
+<div class="card" id="card-y_home" data-id="y_home">
+  <div class="cardtop"><span class="num">28</span>
+    <label class="done"><input type="checkbox" onchange="mark('y_home',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你和朋友出去一般几点回家？</div><div class="py">nǐ hé péng yǒu chū qù yì bān jǐ diǎn huí jiā？</div><div class="en">When you go out with friends, what time do you usually come home?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-y_home',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('y_home')">看范文 ▼</button></div>
+  <div class="timer" id="t-y_home"></div>
+  <audio id="a-y_home" preload="none" src="audio/y_home_q.mp3"></audio>
+  <audio id="aa-y_home" preload="none" src="audio/y_home_a.mp3"></audio>
+  <div class="model" id="m-y_home" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-y_home',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我一般晚上十点左右回家。因为父母希望我早点休息，所以我会尽量在十点前到家，虽然有时候朋友想多玩一会儿，但是我正在准备高考，不但要复习功课，而且得保证充足睡眠。</div><div class="py">wǒ yì bān wǎn shàng shí diǎn zuǒ yòu huí jiā。yīn wèi fù mǔ xī wàng wǒ zǎo diǎn xiū xī，suǒ yǐ wǒ huì jǐn liàng zài shí diǎn qián dào jiā，suī rán yǒu shí hòu péng yǒu xiǎng duō wán yī huì er，dàn shì wǒ zhèng zài zhǔn bèi gāo kǎo，bù dàn yào fù xí gōng kè，ér qiě dé bǎo zhèng chōng zú shuì mián。</div><div class="en">I usually get home around 10 p.m. Because my parents want me to rest early, I try to be home before 10, although sometimes my friends want to hang out longer — but I’m preparing for the HSC exams, so I need to study and also get enough sleep.</div>
+    <div class="vocab"><span class="chip"><b>准备</b> <i>zhǔn bèi</i> · prepare</span><span class="chip"><b>虽然…但是</b> <i>suī rán…dàn shì</i> · although…however</span><span class="chip"><b>正在</b> <i>zhèng zài</i> · currently</span></div>
+    <div class="tip">💡 Give a real time (九点左右) → reason (因为…所以) → 虽然…但是 → parents&#x27; view. 左右 (&#x27;around&#x27;) makes the time sound natural.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那如果朋友生日聚会，你也会十点就走吗？</div><div class="py">nà rú guǒ péng yǒu shēng rì jù huì，nǐ yě huì shí diǎn jiù zǒu ma？</div>
+      <div class="en">What if it’s a friend’s birthday party — would you still leave at 10?</div><div class="hint">提示：Yes, but I might stay 15–20 minutes longer; mention compromise and responsibility (e.g., &#x27;I’d explain politely and maybe join earlier next time&#x27;)</div></div>
+  </div>
+</div>
+<div class="card" id="card-y_late" data-id="y_late">
+  <div class="cardtop"><span class="num">29</span>
+    <label class="done"><input type="checkbox" onchange="mark('y_late',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你父母对你晚回家有什么意见？</div><div class="py">nǐ fù mǔ duì nǐ wǎn huí jiā yǒu shén me yì jiàn？</div><div class="en">What do your parents think about you coming home late?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-y_late',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('y_late')">看范文 ▼</button></div>
+  <div class="timer" id="t-y_late"></div>
+  <audio id="a-y_late" preload="none" src="audio/y_late_q.mp3"></audio>
+  <audio id="aa-y_late" preload="none" src="audio/y_late_a.mp3"></audio>
+  <div class="model" id="m-y_late" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-y_late',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我父母不太同意我晚回家，因为担心我的安全，所以每次超过十点就一定要打电话报平安。虽然他们以前管得比较严，但是现在也慢慢理解我有时候要参加学习小组或者社团活动了。</div><div class="py">wǒ fù mǔ bù tài tóng yì wǒ wǎn huí jiā，yīn wèi dān xīn wǒ de ān quán，suǒ yǐ měi cì chāo guò shí diǎn jiù yí dìng yào dǎ diàn huà bào píng ān。suī rán tā men yǐ qián guǎn dé bǐ jiào yán，dàn shì xiàn zài yě màn màn lǐ jiě wǒ yǒu shí hòu yào cān jiā xué xí xiǎo zǔ huò zhě shè tuán huó dòng le。</div><div class="en">My parents don’t really agree with me coming home late, because they’re worried about my safety, so I have to call them to check in if it’s after 10 p.m. Although they used to be stricter, they’ve gradually understood that I sometimes need to attend study groups or club activities.</div>
+    <div class="vocab"><span class="chip"><b>报平安</b> <i>bào píng ān</i> · check in (to confirm safety)</span><span class="chip"><b>理解</b> <i>lǐ jiě</i> · understand</span><span class="chip"><b>担心</b> <i>dān xīn</i> · worry</span></div>
+    <div class="tip">💡 Answer (不太喜欢) → reason (因为…所以, safety) → 虽然…但是 (strict but for my good) → your response. The &#x27;为我好&#x27; line shows mature understanding.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那你自己觉得晚回家合理吗？</div><div class="py">nà nǐ zì jǐ jué de wǎn huí jiā hé lǐ ma？</div>
+      <div class="en">Do you think it’s reasonable for you to come home late?</div><div class="hint">提示：Yes — give one balanced reason (e.g., responsibility + maturity), e.g., &#x27;Yes, because I always plan ahead and stay safe, so it shows I’m becoming more responsible.&#x27;</div></div>
+  </div>
+</div><h2 class="theme">旅游经历 <span class="theme-en">The Chinese-speaking communities · Travel</span></h2>
+<div class="card" id="card-tr_like" data-id="tr_like">
+  <div class="cardtop"><span class="num">30</span>
+    <label class="done"><input type="checkbox" onchange="mark('tr_like',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你喜欢旅游吗？为什么？</div><div class="py">nǐ xǐ huān lǚ yóu ma？wèi shén me？</div><div class="en">Do you like travelling? Why?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-tr_like',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('tr_like')">看范文 ▼</button></div>
+  <div class="timer" id="t-tr_like"></div>
+  <audio id="a-tr_like" preload="none" src="audio/tr_like_q.mp3"></audio>
+  <audio id="aa-tr_like" preload="none" src="audio/tr_like_a.mp3"></audio>
+  <div class="model" id="m-tr_like" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-tr_like',this,'a')">▶ 听范文</button></div>
+    <div class="zh">喜欢，我经常和家人一起旅游。因为旅游不但能让我放松心情，而且可以了解不同的地方文化，比如去年暑假我们去了海边城市，看了传统表演，还尝了当地小吃。虽然准备行程有点麻烦，但是我觉得特别值得，所以将来还想多去几个城市看看。</div><div class="py">xǐ huān，wǒ jīng cháng hé jiā rén yì qǐ lǚ yóu。yīn wèi lǚ yóu bù dàn néng ràng wǒ fàng sōng xīn qíng，ér qiě kě yǐ liǎo jiě bù tóng de dì fāng wén huà，bǐ rú qù nián shǔ jià wǒ men qù le hǎi biān chéng shì，kàn le chuán tǒng biǎo yǎn，hái cháng liǎo dàng dì xiǎo chī。suī rán zhǔn bèi xíng chéng yǒu diǎn má fán，dàn shì wǒ jué de tè bié zhí de，suǒ yǐ jiāng lái hái xiǎng duō qù jǐ gè chéng shì kàn kàn。</div><div class="en">Yes, I often travel with my family. Because travelling not only helps me relax, but also lets me learn about different local cultures—for example, last summer holiday we went to a coastal city, watched traditional performances, and tried local snacks. Although planning the trip was a bit troublesome, I think it’s really worthwhile, so I’d like to visit more cities in the future.</div>
+    <div class="vocab"><span class="chip"><b>放松</b> <i>fàng sōng</i> · relax</span><span class="chip"><b>文化</b> <i>wén huà</i> · culture</span><span class="chip"><b>将来</b> <i>jiāng lái</i> · in the future</span></div>
+    <div class="tip">💡 Opinion (喜欢) → reason (因为) → honest detail with 去过 (Gold Coast) → future wish. 去过 proves you can use experience tense.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 你最喜欢去哪种地方旅游？为什么？</div><div class="py">nǐ zuì xǐ huān qù nǎ zhòng dì fāng lǚ yóu？wèi shén me？</div>
+      <div class="en">What kind of place do you most like to travel to? Why?</div><div class="hint">提示：Pick one simple type (e.g., coastal city / mountain area / historic town); give one reason linked to experience or feeling (e.g., &#x27;I like coastal cities because the sea view makes me feel calm&#x27;).</div></div>
+  </div>
+</div>
+<div class="card" id="card-tr_been" data-id="tr_been">
+  <div class="cardtop"><span class="num">31</span>
+    <label class="done"><input type="checkbox" onchange="mark('tr_been',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你去过哪个国家和城市？</div><div class="py">nǐ qù guò nǎ ge guó jiā hé chéng shì？</div><div class="en">Which countries and cities have you been to?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-tr_been',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('tr_been')">看范文 ▼</button></div>
+  <div class="timer" id="t-tr_been"></div>
+  <audio id="a-tr_been" preload="none" src="audio/tr_been_q.mp3"></audio>
+  <audio id="aa-tr_been" preload="none" src="audio/tr_been_a.mp3"></audio>
+  <div class="model" id="m-tr_been" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-tr_been',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我去过新加坡，因为那里有很多华人，所以中文用得很多。虽然它是个小国家，但是不但交通很方便，而且街头到处都能听到普通话。去年暑假我跟家人一起去的，觉得特别有意思，因为能用中文点餐、问路，完全不用怕语言不通。</div><div class="py">wǒ qù guò xīn jiā pō，yīn wèi nà lǐ yǒu hěn duō huá rén，suǒ yǐ zhōng wén yòng dé hěn duō。suī rán tā shì gè xiǎo guó jiā，dàn shì bù dàn jiāo tōng hěn fāng biàn，ér qiě jiē tóu dào chù dōu néng tīng dào pǔ tōng huà。qù nián shǔ jià wǒ gēn jiā rén yì qǐ qù de，jué de tè bié yǒu yì si，yīn wèi néng yòng zhōng wén diǎn cān、wèn lù，wán quán bù yòng pà yǔ yán bù tōng。</div><div class="en">I&#x27;ve been to Singapore, because there are many Chinese speakers there, so Mandarin is widely used. Although it&#x27;s a small country, not only is the transport very convenient, but you can also hear Putonghua everywhere on the streets. I went there with my family last summer holiday, and I found it really interesting because I could order food and ask for directions in Chinese — no language barrier at all.</div>
+    <div class="vocab"><span class="chip"><b>虽然</b> <i>suī rán</i> · although</span><span class="chip"><b>不但…而且</b> <i>bù dàn…ér qiě</i> · not only… but also</span><span class="chip"><b>去年</b> <i>qù nián</i> · last year</span></div>
+    <div class="tip">💡 Be modest and honest (去过的地方不多). Use 去过 for places visited, 将来…想 for the wish. Honesty + correct tense beats a fake long trip.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 你下次想去哪里旅行？为什么？</div><div class="py">nǐ xià cì xiǎng qù nǎ lǐ lǚ xíng？wèi shén me？</div>
+      <div class="en">Where would you like to travel next? Why?</div><div class="hint">提示：Pick a common Chinese-speaking place (e.g., Malaysia, China, Taiwan); give one simple reason linked to language or culture (e.g., &#x27;I want to practise more Chinese&#x27; or &#x27;I’m curious about local food&#x27;).</div></div>
+  </div>
+</div>
+<div class="card" id="card-tr_when" data-id="tr_when">
+  <div class="cardtop"><span class="num">32</span>
+    <label class="done"><input type="checkbox" onchange="mark('tr_when',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你什么时候去了那些地方？</div><div class="py">nǐ shén me shí hòu qù le nà xiē dì fāng？</div><div class="en">When did you go to those places?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-tr_when',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('tr_when')">看范文 ▼</button></div>
+  <div class="timer" id="t-tr_when"></div>
+  <audio id="a-tr_when" preload="none" src="audio/tr_when_q.mp3"></audio>
+  <audio id="aa-tr_when" preload="none" src="audio/tr_when_a.mp3"></audio>
+  <div class="model" id="m-tr_when" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-tr_when',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我去年暑假去了墨尔本的唐人街和悉尼的中国城。因为那里不但有各种中餐馆和中文招牌，而且还有很多华人社区活动，所以我经常去逛。虽然我以前没怎么注意这些地方，但是现在觉得它们特别有意思，将来还想多了解当地华人的生活。</div><div class="py">wǒ qù nián shǔ jià qù le mò ěr běn de táng rén jiē hé xī ní de zhōng guó chéng。yīn wèi nà lǐ bù dàn yǒu gè zhǒng zhōng cān guǎn hé zhōng wén zhāo pái，ér qiě hái yǒu hěn duō huá rén shè qū huó dòng，suǒ yǐ wǒ jīng cháng qù guàng。suī rán wǒ yǐ qián méi zěn me zhù yì zhè xiē dì fāng，dàn shì xiàn zài jué de tā men tè bié yǒu yì si，jiāng lái hái xiǎng duō liǎo jiě dāng dì huá rén de shēng huó。</div><div class="en">I went to Melbourne’s Chinatown and Sydney’s Chinese Quarter last summer holiday. Because there are not only many Chinese restaurants and Chinese signs, but also lots of community events for Chinese speakers, I often go there to have a look. Although I didn’t pay much attention to these places before, I find them really interesting now, and I’d like to learn more about local Chinese-speaking people’s lives in the future.</div>
+    <div class="vocab"><span class="chip"><b>唐人街</b> <i>táng rén jiē</i> · Chinatown</span><span class="chip"><b>社区活动</b> <i>shè qū huó dòng</i> · community events</span><span class="chip"><b>将来</b> <i>jiāng lái</i> · in the future</span></div>
+    <div class="tip">💡 Past-time words are essential: 去年 / 前年 + 了 (去了). This whole answer is about proving you can talk about the PAST — markers check this directly.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 除了吃东西和看招牌，你还在那些地方做过什么？</div><div class="py">chú le chī dōng xī hé kàn zhāo pái，nǐ hái zài nà xiē dì fāng zuò guò shén me？</div>
+      <div class="en">Besides eating and looking at signs, what else did you do there?</div><div class="hint">提示：Mention one simple, common activity (e.g., attended a festival, bought souvenirs, chatted with shopkeepers) — keep it general and past-tense.</div></div>
+  </div>
+</div>
+<div class="card" id="card-tr_visit" data-id="tr_visit">
+  <div class="cardtop"><span class="num">33</span>
+    <label class="done"><input type="checkbox" onchange="mark('tr_visit',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你参观了哪些地方？</div><div class="py">nǐ cān guān le nǎ xiē dì fāng？</div><div class="en">Which places did you visit?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-tr_visit',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('tr_visit')">看范文 ▼</button></div>
+  <div class="timer" id="t-tr_visit"></div>
+  <audio id="a-tr_visit" preload="none" src="audio/tr_visit_q.mp3"></audio>
+  <audio id="aa-tr_visit" preload="none" src="audio/tr_visit_a.mp3"></audio>
+  <div class="model" id="m-tr_visit" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-tr_visit',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我参观过悉尼的唐人街和春节庆祝活动。因为那里有很多传统表演和美食，所以我每年都想去看看。虽然我还没去过墨尔本的华人社区，但是将来很想体验那边的中秋灯会。</div><div class="py">wǒ cān guān guò xī ní de táng rén jiē hé chūn jié qìng zhù huó dòng。yīn wèi nà lǐ yǒu hěn duō chuán tǒng biǎo yǎn hé měi shí，suǒ yǐ wǒ měi nián dōu xiǎng qù kàn kàn。suī rán wǒ hái méi qù guò mò ěr běn de huá rén shè qū，dàn shì jiāng lái hěn xiǎng tǐ yàn nà biān de zhōng qiū dēng huì。</div><div class="en">I have visited Sydney’s Chinatown and the Spring Festival celebrations. Because there are many traditional performances and food there, I want to go every year. Although I haven’t been to Melbourne’s Chinese-speaking community yet, I’d like to experience their Mid-Autumn lantern festival in the future.</div>
+    <div class="vocab"><span class="chip"><b>参观过</b> <i>cān guān guò</i> · have visited</span><span class="chip"><b>因为…所以</b> <i>yīn wèi…suǒ yǐ</i> · because…so</span><span class="chip"><b>将来</b> <i>jiāng lái</i> · in the future</span></div>
+    <div class="tip">💡 Use 了 throughout (参观了/看了/去了) — this is a past-experience answer. List 2 places + 除了…以外 + a reflection (难忘).</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 你为什么觉得这些活动很重要？</div><div class="py">nǐ wèi shén me jué de zhè xiē huó dòng hěn zhòng yào？</div>
+      <div class="en">Why do you think these activities are important?</div><div class="hint">提示：Say it helps keep traditions alive + connect people (e.g., ‘它们让我更了解自己的文化，也让我和朋友有共同话题’).</div></div>
+  </div>
+</div>
+<div class="card" id="card-tr_transport" data-id="tr_transport">
+  <div class="cardtop"><span class="num">34</span>
+    <label class="done"><input type="checkbox" onchange="mark('tr_transport',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你坐什么交通工具去那些地方？</div><div class="py">nǐ zuò shén me jiāo tōng gōng jù qù nà xiē dì fāng？</div><div class="en">What kind of transport did you take to those places?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-tr_transport',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('tr_transport')">看范文 ▼</button></div>
+  <div class="timer" id="t-tr_transport"></div>
+  <audio id="a-tr_transport" preload="none" src="audio/tr_transport_q.mp3"></audio>
+  <audio id="aa-tr_transport" preload="none" src="audio/tr_transport_a.mp3"></audio>
+  <div class="model" id="m-tr_transport" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-tr_transport',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我通常坐地铁去那些地方。因为地铁又快又便宜，所以我不但节省时间，而且不用担心堵车。最近几年我经常坐地铁去唐人街和华人超市，已经习惯了这种出行方式。</div><div class="py">wǒ tōng cháng zuò dì tiě qù nà xiē dì fāng。yīn wèi dì tiě yòu kuài yòu pián yi，suǒ yǐ wǒ bù dàn jié shěng shí jiān，ér qiě bù yòng dān xīn dǔ chē。zuì jìn jǐ nián wǒ jīng cháng zuò dì tiě qù táng rén jiē hé huá rén chāo shì，yǐ jīng xí guàn le zhè zhǒng chū xíng fāng shì。</div><div class="en">I usually take the subway to those places. Because the subway is both fast and cheap, I not only save time but also don’t have to worry about traffic jams. In recent years, I’ve often taken the subway to Chinatown and Chinese supermarkets — I’ve gotten used to this way of travelling.</div>
+    <div class="vocab"><span class="chip"><b>地铁</b> <i>dì tiě</i> · subway</span><span class="chip"><b>最近几年</b> <i>zuì jìn jǐ nián</i> · in recent years</span><span class="chip"><b>不但…而且</b> <i>bù dàn…ér qiě</i> · not only… but also</span></div>
+    <div class="tip">💡 坐了飞机 (past tense with 了). 又…又… (&#x27;both fast and convenient&#x27;) is an easy connector that adds range. Then a 虽然…但是 opinion.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 如果附近没有地铁站，你会选择什么其他交通方式？</div><div class="py">rú guǒ fù jìn méi yǒu dì tiě zhàn，nǐ huì xuǎn zé shén me qí tā jiāo tōng fāng shì？</div>
+      <div class="en">What other transport option would you choose if there were no subway station nearby?</div><div class="hint">提示：Mention one alternative (e.g., bus/bike/bus) + simple reason (e.g., ‘it’s convenient’ or ‘I can go directly’).</div></div>
+  </div>
+</div>
+<div class="card" id="card-tr_fav" data-id="tr_fav">
+  <div class="cardtop"><span class="num">35</span>
+    <label class="done"><input type="checkbox" onchange="mark('tr_fav',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你最喜欢哪个国家和城市，为什么？</div><div class="py">nǐ zuì xǐ huān nǎ ge guó jiā hé chéng shì，wèi shén me？</div><div class="en">Which country and city do you like best, and why?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-tr_fav',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('tr_fav')">看范文 ▼</button></div>
+  <div class="timer" id="t-tr_fav"></div>
+  <audio id="a-tr_fav" preload="none" src="audio/tr_fav_q.mp3"></audio>
+  <audio id="aa-tr_fav" preload="none" src="audio/tr_fav_a.mp3"></audio>
+  <div class="model" id="m-tr_fav" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-tr_fav',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我最喜欢日本的东京，因为那里既有现代的高楼，又有传统的寺庙。我去年去过一次，不但能坐新干线，而且还能在浅草寺体验茶道。虽然交通有点复杂，但是大家都会说一点英语，所以旅行起来挺方便的。</div><div class="py">wǒ zuì xǐ huān rì běn de dōng jīng，yīn wèi nà lǐ jì yǒu xiàn dài de gāo lóu，yòu yǒu chuán tǒng de sì miào。wǒ qù nián qù guò yī cì，bù dàn néng zuò xīn gàn xiàn，ér qiě hái néng zài qiǎn cǎo sì tǐ yàn chá dào。suī rán jiāo tōng yǒu diǎn fù zá，dàn shì dà jiā dū huì shuō yì diǎn yīng yǔ，suǒ yǐ lǚ xíng qǐ lái tǐng fāng biàn de。</div><div class="en">I like Tokyo in Japan the most because it has both modern skyscrapers and traditional temples. I went there last year — not only did I ride the Shinkansen, but I also experienced tea ceremony at Senso-ji Temple. Although public transport is a bit complicated, many people speak some English, so travelling there is quite easy.</div>
+    <div class="vocab"><span class="chip"><b>去年</b> <i>qù nián</i> · last year</span><span class="chip"><b>不但…而且</b> <i>bù dàn…ér qiě</i> · not only… but also</span><span class="chip"><b>虽然…但是</b> <i>suī rán…dàn shì</i> · although… but</span></div>
+    <div class="tip">💡 Pick ONE place → 因为 reason → link to YOU (surfing) → future wish (将来…想). Connecting it to your own hobby is what lifts it above a list.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 你提到去年去过东京，那你觉得和中国城市相比，东京的公共交通有什么不同？</div><div class="py">nǐ tí dào qù nián qù guò dōng jīng，nà nǐ jué de hé zhōng guó chéng shì xiāng bǐ，dōng jīng de gōng gòng jiāo tōng yǒu shén me bù tóng？</div>
+      <div class="en">You mentioned you went to Tokyo last year — what’s different about Tokyo’s public transport compared to cities in China?</div><div class="hint">提示：Compare clarity of signs (many in English + Japanese) vs. Chinese cities; mention punctuality and frequency</div></div>
+  </div>
+</div>
+<div class="card" id="card-tr_worth" data-id="tr_worth">
+  <div class="cardtop"><span class="num">36</span>
+    <label class="done"><input type="checkbox" onchange="mark('tr_worth',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">有什么地方值得去玩吗？</div><div class="py">yǒu shén me dì fāng zhí de qù wán ma？</div><div class="en">Are there any places worth visiting?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-tr_worth',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('tr_worth')">看范文 ▼</button></div>
+  <div class="timer" id="t-tr_worth"></div>
+  <audio id="a-tr_worth" preload="none" src="audio/tr_worth_q.mp3"></audio>
+  <audio id="aa-tr_worth" preload="none" src="audio/tr_worth_a.mp3"></audio>
+  <div class="model" id="m-tr_worth" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-tr_worth',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我觉得广州挺值得去玩的，因为那里不但有传统骑楼和早茶文化，而且交通很方便。我去年暑假去过一次，所以对当地的生活节奏印象很深。虽然天气有点热，但是因为美食太多，所以完全不觉得闷。</div><div class="py">wǒ jué de guǎng zhōu tǐng zhí de qù wán de，yīn wèi nà lǐ bù dàn yǒu chuán tǒng qí lóu hé zǎo chá wén huà，ér qiě jiāo tōng hěn fāng biàn。wǒ qù nián shǔ jià qù guò yī cì，suǒ yǐ duì dāng dì de shēng huó jié zòu yìn xiàng hěn shēn。suī rán tiān qì yǒu diǎn rè，dàn shì yīn wèi měi shí tài duō，suǒ yǐ wán quán bù jué dé mèn。</div><div class="en">I think Guangzhou is worth visiting because it not only has traditional arcade buildings and morning tea culture, but also very convenient transport. I went there last summer holiday, so I still remember the local pace of life clearly. Although the weather is a bit hot, it’s never boring because there’s so much delicious food.</div>
+    <div class="vocab"><span class="chip"><b>不但…而且</b> <i>bù dàn…ér qiě</i> · not only… but also</span><span class="chip"><b>了</b> <i>le</i> · already (aspect marker)</span><span class="chip"><b>因为…所以</b> <i>yīn wèi…suǒ yǐ</i> · because…so</span></div>
+    <div class="tip">💡 值得 + 比如说 + 除了…以外 + 如果…就/建议. Give 2 specific spots, then a recommendation. 建议 sounds polished and natural.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 你最喜欢广州的哪种食物？</div><div class="py">nǐ zuì xǐ huān guǎng zhōu de nǎ zhǒng shí wù？</div>
+      <div class="en">What kind of food in Guangzhou did you like most?</div><div class="hint">提示：Pick one common dish (e.g., dim sum), say why (tasty / shared with family / easy to find), and add a simple time word (e.g., ‘我试过一次’ or ‘下次还想吃’).</div></div>
+  </div>
+</div>
+<div class="card" id="card-tr_recommend" data-id="tr_recommend">
+  <div class="cardtop"><span class="num">37</span>
+    <label class="done"><input type="checkbox" onchange="mark('tr_recommend',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">如果有朋友要来你的城市旅游，你会建议他/她去哪些地方呢？</div><div class="py">rú guǒ yǒu péng yǒu yào lái nǐ de chéng shì lǚ yóu，nǐ huì jiàn yì tā/tā qù nǎ xiē dì fāng ne？</div><div class="en">If a friend came to your city, where would you suggest they go?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-tr_recommend',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('tr_recommend')">看范文 ▼</button></div>
+  <div class="timer" id="t-tr_recommend"></div>
+  <audio id="a-tr_recommend" preload="none" src="audio/tr_recommend_q.mp3"></audio>
+  <audio id="aa-tr_recommend" preload="none" src="audio/tr_recommend_a.mp3"></audio>
+  <div class="model" id="m-tr_recommend" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-tr_recommend',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我会推荐他去市中心的步行街和附近的公园。因为那里交通方便，而且不但有传统小吃，还有现代商场，所以很适合游客体验本地生活。我去年去过那里好几次了，现在正在计划带家人再去一次。</div><div class="py">wǒ huì tuī jiàn tā qù shì zhōng xīn de bù xíng jiē hé fù jìn de gōng yuán。yīn wèi nà lǐ jiāo tōng fāng biàn，ér qiě bù dàn yǒu chuán tǒng xiǎo chī，hái yǒu xiàn dài shāng chǎng，suǒ yǐ hěn shì hé yóu kè tǐ yàn běn dì shēng huó。wǒ qù nián qù guò nà lǐ hǎo jǐ cì le，xiàn zài zhèng zài jì huà dài jiā rén zài qù yī cì。</div><div class="en">I’d recommend visiting the pedestrian street in the city centre and the nearby park. Because it’s easy to get to, and not only has traditional snacks but also modern shopping malls, so it’s great for tourists to experience local life. I’ve been there several times last year, and I’m planning to take my family there again now.</div>
+    <div class="vocab"><span class="chip"><b>推荐</b> <i>tuī jiàn</i> · recommend</span><span class="chip"><b>不但…而且</b> <i>bù dàn…ér qiě</i> · not only… but also</span><span class="chip"><b>正在</b> <i>zhèng zài</i> · am currently</span></div>
+    <div class="tip">💡 如果…会 frames the answer as advice. Direct answer (beach first) → reason → extend (Opera House, city) → reflection (玩得开心).</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 除了这些地方，你还会建议朋友参加什么活动？</div><div class="py">chú le zhè xiē dì fāng，nǐ hái huì jiàn yì péng yǒu cān jiā shén me huó dòng？</div>
+      <div class="en">Besides these places, what other activities would you suggest for your friend?</div><div class="hint">提示：Mention one simple, common activity (e.g., trying local food / taking a bus tour / visiting a free museum) — keep it general and match the tone of your original answer.</div></div>
+  </div>
+</div>
+<div class="card" id="card-tr_besttime" data-id="tr_besttime">
+  <div class="cardtop"><span class="num">38</span>
+    <label class="done"><input type="checkbox" onchange="mark('tr_besttime',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你能告诉他/她什么时候来旅游最合适吗？</div><div class="py">nǐ néng gào sù tā/tā shén me shí hòu lái lǚ yóu zuì hé shì ma？</div><div class="en">Can you tell them when is the best time to visit?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-tr_besttime',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('tr_besttime')">看范文 ▼</button></div>
+  <div class="timer" id="t-tr_besttime"></div>
+  <audio id="a-tr_besttime" preload="none" src="audio/tr_besttime_q.mp3"></audio>
+  <audio id="aa-tr_besttime" preload="none" src="audio/tr_besttime_a.mp3"></audio>
+  <div class="model" id="m-tr_besttime" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-tr_besttime',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我觉得春天来旅游最合适了，因为天气不冷也不热，而且很多地方的花都开了。虽然夏天也可以去，但是太热了，所以很多人更喜欢春天。</div><div class="py">wǒ jué de chūn tiān lái lǚ yóu zuì hé shì le，yīn wèi tiān qì bù lěng yě bù rè，ér qiě hěn duō dì fāng de huā dōu kāi le。suī rán xià tiān yě kě yǐ qù，dàn shì tài rè le，suǒ yǐ hěn duō rén gèng xǐ huān chūn tiān。</div><div class="en">I think spring is the best time to travel, because the weather is neither cold nor hot, and flowers are blooming everywhere. Although summer is also possible, it’s too hot, so many people prefer spring.</div>
+    <div class="vocab"><span class="chip"><b>最合适</b> <i>zuì hé shì</i> · most suitable</span><span class="chip"><b>开了</b> <i>kāi le</i> · are blooming</span><span class="chip"><b>虽然…但是</b> <i>suī rán…dàn shì</i> · although…however</span></div>
+    <div class="tip">💡 Answer the &#x27;when&#x27; directly (夏天) → reason → 虽然…但是 → concrete months. Naming the months (十二月/一月) shows real detail.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那冬天去旅游有什么好处或不方便的地方？</div><div class="py">nà dōng tiān qù lǚ yóu yǒu shén me hǎo chù huò bù fāng biàn de dì fāng？</div>
+      <div class="en">What are the advantages or disadvantages of travelling in winter?</div><div class="hint">提示：Mention one simple benefit (e.g., fewer tourists) and one drawback (e.g., cold weather) using ‘because’ or ‘so’.</div></div>
+  </div>
+</div>
+<div class="card" id="card-tr_bring" data-id="tr_bring">
+  <div class="cardtop"><span class="num">39</span>
+    <label class="done"><input type="checkbox" onchange="mark('tr_bring',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你的朋友需要带什么特别的东西去旅游吗？</div><div class="py">nǐ de péng yǒu xū yào dài shén me tè bié de dōng xī qù lǚ yóu ma？</div><div class="en">Does your friend need to bring anything special for the trip?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-tr_bring',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('tr_bring')">看范文 ▼</button></div>
+  <div class="timer" id="t-tr_bring"></div>
+  <audio id="a-tr_bring" preload="none" src="audio/tr_bring_q.mp3"></audio>
+  <audio id="aa-tr_bring" preload="none" src="audio/tr_bring_a.mp3"></audio>
+  <div class="model" id="m-tr_bring" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-tr_bring',this,'a')">▶ 听范文</button></div>
+    <div class="zh">是的，我的朋友通常会带一个翻译软件去旅游。因为现在很多地方的中文标识不多，所以他们用手机App实时翻译菜单或路牌。他们去年去墨尔本旅行时就用过，不但方便，而且节省了不少时间。</div><div class="py">shì de，wǒ de péng yǒu tōng cháng huì dài yí gè fān yì ruǎn jiàn qù lǚ yóu。yīn wèi xiàn zài hěn duō dì fāng de zhōng wén biāo shí bù duō，suǒ yǐ tā men yòng shǒu jī A p p shí shí fān yì cài dān huò lù pái。tā men qù nián qù mò ěr běn lǚ xíng shí jiù yòng guò，bù dàn fāng biàn，ér qiě jié shěng le bù shǎo shí jiān。</div><div class="en">Yes, my friend usually brings a translation app when travelling. Because there aren’t many Chinese signs in many places, they use a mobile app to translate menus or street signs in real time. They used it last year when travelling to Melbourne — it was not only convenient but also saved a lot of time.</div>
+    <div class="vocab"><span class="chip"><b>翻译软件</b> <i>fān yì ruǎn jiàn</i> · translation app</span><span class="chip"><b>标识</b> <i>biāo shí</i> · signs</span><span class="chip"><b>节省时间</b> <i>jié shěng shí jiān</i> · save time</span></div>
+    <div class="tip">💡 如果…就 + 因为…所以 give structure. List 2-3 concrete items (very natural, easy to remember) → close with 我觉得…就够了.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那如果网络不好，他们怎么办？</div><div class="py">nà rú guǒ wǎng luò bù hǎo，tā men zěn me bàn？</div>
+      <div class="en">What do they do if there’s no internet connection?</div><div class="hint">提示：Mention offline function — e.g., &#x27;They download offline language packs before the trip.&#x27;</div></div>
+  </div>
+</div>
+<div class="card" id="card-tr_china" data-id="tr_china">
+  <div class="cardtop"><span class="num">40</span>
+    <label class="done"><input type="checkbox" onchange="mark('tr_china',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">如果你的朋友要去中国旅游，你能告诉他/她去什么地方玩吗？</div><div class="py">rú guǒ nǐ de péng yǒu yào qù zhōng guó lǚ yóu，nǐ néng gào sù tā/tā qù shén me dì fāng wán ma？</div><div class="en">If your friend went to China, can you tell them where to visit?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-tr_china',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('tr_china')">看范文 ▼</button></div>
+  <div class="timer" id="t-tr_china"></div>
+  <audio id="a-tr_china" preload="none" src="audio/tr_china_q.mp3"></audio>
+  <audio id="aa-tr_china" preload="none" src="audio/tr_china_a.mp3"></audio>
+  <div class="model" id="m-tr_china" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-tr_china',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我建议去北京玩，因为那里不但有故宫和长城这些著名景点，而且交通很方便。我去年暑假去过一次，所以知道怎么坐地铁和买门票。虽然天气有时候比较热，但是因为有很多树荫和空调商场，所以玩起来还是很舒服的。</div><div class="py">wǒ jiàn yì qù běi jīng wán，yīn wèi nà lǐ bù dàn yǒu gù gōng hé cháng chéng zhè xiē zhù míng jǐng diǎn，ér qiě jiāo tōng hěn fāng biàn。wǒ qù nián shǔ jià qù guò yī cì，suǒ yǐ zhī dào zěn me zuò dì tiě hé mǎi mén piào。suī rán tiān qì yǒu shí hòu bǐ jiào rè，dàn shì yīn wèi yǒu hěn duō shù yīn hé kōng tiáo shāng chǎng，suǒ yǐ wán qǐ lái hái shì hěn shū fú de。</div><div class="en">I suggest visiting Beijing because it not only has famous attractions like the Forbidden City and the Great Wall, but also has very convenient transportation. I went there last summer holiday, so I know how to take the subway and buy tickets. Although the weather can be quite hot sometimes, it’s still comfortable to explore because there are many shaded areas and air-conditioned shopping malls.</div>
+    <div class="vocab"><span class="chip"><b>不但…而且</b> <i>bù dàn…ér qiě</i> · not only… but also</span><span class="chip"><b>过</b> <i>guò</i> · (verb) have done (experience)</span><span class="chip"><b>因为…所以</b> <i>yīn wèi…suǒ yǐ</i> · because…so</span></div>
+    <div class="tip">💡 Be honest (还没去过) but still give advice from what you&#x27;ve heard. 建议 + 因为 (Great Wall) + 除了…以外 (Shanghai) + future wish.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 除了北京，你还推荐哪个城市？为什么？</div><div class="py">chú le běi jīng，nǐ hái tuī jiàn nǎ ge chéng shì？wèi shén me？</div>
+      <div class="en">Besides Beijing, which other city would you recommend? Why?</div><div class="hint">提示：Pick one common city (e.g., Shanghai or Xi’an), name one simple feature (e.g., ‘modern buildings’ or ‘ancient city wall’), and link it to a practical reason (e.g., ‘easy to walk around’ or ‘good for photos’).</div></div>
+  </div>
+</div><h2 class="theme">旅游与待客 · 介绍中国 <span class="theme-en">The Chinese-speaking communities · Tourism</span></h2>
+<div class="card" id="card-t_chinatown" data-id="t_chinatown">
+  <div class="cardtop"><span class="num">41</span>
+    <label class="done"><input type="checkbox" onchange="mark('t_chinatown',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">如果你带旅客去唐人街，你会做什么？</div><div class="py">rú guǒ nǐ dài lǚ kè qù táng rén jiē，nǐ huì zuò shén me？</div><div class="en">If you took tourists to Chinatown, what would you do?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-t_chinatown',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('t_chinatown')">看范文 ▼</button></div>
+  <div class="timer" id="t-t_chinatown"></div>
+  <audio id="a-t_chinatown" preload="none" src="audio/t_chinatown_q.mp3"></audio>
+  <audio id="aa-t_chinatown" preload="none" src="audio/t_chinatown_a.mp3"></audio>
+  <div class="model" id="m-t_chinatown" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-t_chinatown',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我会带他们去唐人街吃地道的中餐和买小纪念品。因为唐人街不但有各种传统小吃，而且很多店铺已经开了几十年了，所以特别有老味道。我去年去过一次，虽然人很多，但是很热闹，让我觉得很有文化气息。</div><div class="py">wǒ huì dài tā men qù táng rén jiē chī dì dào de zhōng cān hé mǎi xiǎo jì niàn pǐn。yīn wèi táng rén jiē bù dàn yǒu gè zhǒng chuán tǒng xiǎo chī，ér qiě hěn duō diàn pù yǐ jīng kāi le jǐ shí nián le，suǒ yǐ tè bié yǒu lǎo wèi dào。wǒ qù nián qù guò yī cì，suī rán rén hěn duō，dàn shì hěn rè nào，ràng wǒ jué de hěn yǒu wén huà qì xī。</div><div class="en">I would take them to Chinatown to eat authentic Chinese food and buy small souvenirs. Because Chinatown not only has many traditional snacks, but also many shops have been open for decades, so it has a very strong old-fashioned flavour. I went there last year — although it was very crowded, it felt lively and culturally rich.</div>
+    <div class="vocab"><span class="chip"><b>纪念品</b> <i>jì niàn pǐn</i> · souvenir</span><span class="chip"><b>热闹</b> <i>rè nào</i> · lively/crowded and energetic</span><span class="chip"><b>几十年</b> <i>jǐ shí nián</i> · several decades</span></div>
+    <div class="tip">💡 如果…就/会 sets up the whole answer as a plan (future). Direct answer (eat first) → detail → extend (shopping) → reflection. 会 is your future-action word here.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 除了吃和买，你还会带游客做什么？</div><div class="py">chú le chī hé mǎi，nǐ hái huì dài yóu kè zuò shén me？</div>
+      <div class="en">Besides eating and shopping, what else would you do with tourists?</div><div class="hint">提示：Mention one simple activity (e.g., taking photos, visiting a temple or garden, watching lion dance) + reason (e.g., &#x27;to help them understand Chinese culture better&#x27;)</div></div>
+  </div>
+</div>
+<div class="card" id="card-t_introcity" data-id="t_introcity">
+  <div class="cardtop"><span class="num">42</span>
+    <label class="done"><input type="checkbox" onchange="mark('t_introcity',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你会怎么向中国来的旅客介绍你生活的城市？</div><div class="py">nǐ huì zěn me xiàng zhōng guó lái de lǚ kè jiè shào nǐ shēng huó de chéng shì？</div><div class="en">How would you introduce your city to tourists from China?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-t_introcity',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('t_introcity')">看范文 ▼</button></div>
+  <div class="timer" id="t-t_introcity"></div>
+  <audio id="a-t_introcity" preload="none" src="audio/t_introcity_q.mp3"></audio>
+  <audio id="aa-t_introcity" preload="none" src="audio/t_introcity_a.mp3"></audio>
+  <div class="model" id="m-t_introcity" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-t_introcity',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我会先告诉他们我们城市最出名的景点，比如市中心的老街和公园。因为那里交通方便，而且有很多本地小吃，所以游客可以一边散步一边体验生活。我最近带几个外国朋友逛过那里，虽然天气有点热，但是大家都玩得很开心。</div><div class="py">wǒ huì xiān gào sù tā men wǒ men chéng shì zuì chū míng de jǐng diǎn，bǐ rú shì zhōng xīn de lǎo jiē hé gōng yuán。yīn wèi nà lǐ jiāo tōng fāng biàn，ér qiě yǒu hěn duō běn dì xiǎo chī，suǒ yǐ yóu kè kě yǐ yī biān sàn bù yī biān tǐ yàn shēng huó。wǒ zuì jìn dài jǐ gè wài guó péng yǒu guàng guò nà lǐ，suī rán tiān qì yǒu diǎn rè，dàn shì dà jiā dōu wán dé hěn kāi xīn。</div><div class="en">I’d first tell them about our city’s most famous places, like the old street and park in the city centre. Because it’s easy to get there and has lots of local snacks, tourists can walk around and experience daily life at the same time. I’ve taken some foreign friends there recently — although it was a bit hot, everyone still had a great time.</div>
+    <div class="vocab"><span class="chip"><b>景点</b> <i>jǐng diǎn</i> · attraction</span><span class="chip"><b>体验</b> <i>tǐ yàn</i> · experience</span><span class="chip"><b>最近</b> <i>zuì jìn</i> · recently</span></div>
+    <div class="tip">💡 Name your city first → give a feature + reason (因为…所以) → extend (除了…以外) → reflection. 会 marks this as what you &#x27;would&#x27; do.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 除了景点，你还会推荐什么给中国游客？</div><div class="py">chú le jǐng diǎn，nǐ hái huì tuī jiàn shén me gěi zhōng guó yóu kè？</div>
+      <div class="en">Besides attractions, what else would you recommend to Chinese visitors?</div><div class="hint">提示：Mention one simple, everyday thing — e.g., public transport, shopping mall, or night market — and give one short reason (e.g., ‘It’s cheap and open late’).</div></div>
+  </div>
+</div>
+<div class="card" id="card-t_impression" data-id="t_impression">
+  <div class="cardtop"><span class="num">43</span>
+    <label class="done"><input type="checkbox" onchange="mark('t_impression',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">说说你对中国的印象。</div><div class="py">shuō shuō nǐ duì zhōng guó de yìn xiàng。</div><div class="en">Tell me about your impression of China.</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-t_impression',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('t_impression')">看范文 ▼</button></div>
+  <div class="timer" id="t-t_impression"></div>
+  <audio id="a-t_impression" preload="none" src="audio/t_impression_q.mp3"></audio>
+  <audio id="aa-t_impression" preload="none" src="audio/t_impression_a.mp3"></audio>
+  <div class="model" id="m-t_impression" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-t_impression',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我对中国的印象是又传统又现代。虽然很多城市已经建了很多高楼，但是老城区还保留着古老的建筑和节日习俗。去年我去过北京，看到天坛和三里屯挨得很近，所以觉得中国不但发展快，而且很重视文化传承。</div><div class="py">wǒ duì zhōng guó de yìn xiàng shì yòu chuán tǒng yòu xiàn dài。suī rán hěn duō chéng shì yǐ jīng jiàn le hěn duō gāo lóu，dàn shì lǎo chéng qū hái bǎo liú zhe gǔ lǎo de jiàn zhù hé jié rì xí sú。qù nián wǒ qù guò běi jīng，kàn dào tiān tán hé sān lǐ tún āi dé hěn jìn，suǒ yǐ jué de zhōng guó bù dàn fā zhǎn kuài，ér qiě hěn zhòng shì wén huà chuán chéng。</div><div class="en">My impression of China is that it’s both traditional and modern. Although many cities have built many high-rises, old districts still keep ancient architecture and festival customs. Last year I visited Beijing and saw the Temple of Heaven right next to Sanlitun, so I feel China is not only developing quickly but also values cultural heritage.</div>
+    <div class="vocab"><span class="chip"><b>传统</b> <i>chuán tǒng</i> · tradition</span><span class="chip"><b>现代</b> <i>xiàn dài</i> · modern</span><span class="chip"><b>发展</b> <i>fā zhǎn</i> · development</span></div>
+    <div class="tip">💡 Be honest (还没去过) but stay positive. Opinion → reason (TV/friends) → detail (history/culture) → future wish (将来…想). 将来 is your future word.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 你去过中国哪些地方？为什么想去那里？</div><div class="py">nǐ qù guò zhōng guó nǎ xiē dì fāng？wèi shén me xiǎng qù nà lǐ？</div>
+      <div class="en">Which places in China have you been to? Why did you want to go there?</div><div class="hint">提示：Pick one common city (e.g., Beijing/Shanghai), name a simple reason (e.g., history, food, language practice), and use ‘because’ + present/future verb (e.g., ‘because I want to practise Chinese’).</div></div>
+  </div>
+</div>
+<div class="card" id="card-t_customs" data-id="t_customs">
+  <div class="cardtop"><span class="num">44</span>
+    <label class="done"><input type="checkbox" onchange="mark('t_customs',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">请你说一说中国和澳大利亚有什么不同的风俗习惯。</div><div class="py">qǐng nǐ shuō yī shuō zhōng guó hé ào dà lì yà yǒu shén me bù tóng de fēng sú xí guàn。</div><div class="en">Tell me about the different customs between China and Australia.</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-t_customs',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('t_customs')">看范文 ▼</button></div>
+  <div class="timer" id="t-t_customs"></div>
+  <audio id="a-t_customs" preload="none" src="audio/t_customs_q.mp3"></audio>
+  <audio id="aa-t_customs" preload="none" src="audio/t_customs_a.mp3"></audio>
+  <div class="model" id="m-t_customs" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-t_customs',this,'a')">▶ 听范文</button></div>
+    <div class="zh">中国和澳大利亚的风俗习惯很不一样。因为中国人过年时全家要一起吃年夜饭，所以特别重视家庭团聚；虽然澳大利亚人也庆祝节日，但是他们更喜欢户外烧烤或者去海滩。我去年春节试过按中国习俗包饺子，不但学会了做馅儿，而且觉得这样过节更有意思了。</div><div class="py">zhōng guó hé ào dà lì yà de fēng sú xí guàn hěn bù yí yàng。yīn wèi zhōng guó rén guò nián shí quán jiā yào yì qǐ chī nián yè fàn，suǒ yǐ tè bié zhòng shì jiā tíng tuán jù；suī rán ào dà lì yà rén yě qìng zhù jié rì，dàn shì tā men gèng xǐ huān hù wài shāo kǎo huò zhě qù hǎi tān。wǒ qù nián chūn jié shì guò àn zhōng guó xí sú bāo jiǎo zi，bù dàn xué huì le zuò xiàn ér，ér qiě jué de zhè yàng guò jié gèng yǒu yì si le。</div><div class="en">Chinese and Australian customs are quite different. Because Chinese people have a family reunion dinner during Spring Festival, they place great importance on family togetherness; although Australians also celebrate holidays, they prefer outdoor barbecues or going to the beach. Last Spring Festival, I tried making dumplings following Chinese tradition—not only did I learn how to prepare the filling, but I also found celebrating this way more meaningful.</div>
+    <div class="vocab"><span class="chip"><b>风俗习惯</b> <i>fēng sú xí guàn</i> · customs</span><span class="chip"><b>年夜饭</b> <i>nián yè fàn</i> · reunion dinner</span><span class="chip"><b>包饺子</b> <i>bāo jiǎo zi</i> · make dumplings</span></div>
+    <div class="tip">💡 比如说 lets you give a clear example. Give 2 simple contrasts (red envelopes, chopsticks vs knife/fork) → 虽然…但是 reflection. Two examples = range markers reward.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那你觉得哪种风俗更适合年轻人？为什么？</div><div class="py">nà nǐ jué de nǎ zhǒng fēng sú gèng shì hé nián qīng rén？wèi shén me？</div>
+      <div class="en">Which custom do you think suits young people better—and why?</div><div class="hint">提示：Choose one (e.g., Australian BBQ), link to youth values: relaxed, social, flexible—no need for strict rules or big family pressure.</div></div>
+  </div>
+</div><h2 class="theme">生活方式 · 中澳对比 <span class="theme-en">The Chinese-speaking communities · Lifestyles</span></h2>
+<div class="card" id="card-l_chinesefood" data-id="l_chinesefood">
+  <div class="cardtop"><span class="num">45</span>
+    <label class="done"><input type="checkbox" onchange="mark('l_chinesefood',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你喜欢中国菜吗？</div><div class="py">nǐ xǐ huān zhōng guó cài ma？</div><div class="en">Do you like Chinese food?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-l_chinesefood',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('l_chinesefood')">看范文 ▼</button></div>
+  <div class="timer" id="t-l_chinesefood"></div>
+  <audio id="a-l_chinesefood" preload="none" src="audio/l_chinesefood_q.mp3"></audio>
+  <audio id="aa-l_chinesefood" preload="none" src="audio/l_chinesefood_a.mp3"></audio>
+  <div class="model" id="m-l_chinesefood" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-l_chinesefood',this,'a')">▶ 听范文</button></div>
+    <div class="zh">喜欢，我经常吃中国菜。因为中国菜种类多、味道好，所以我在家和餐馆都点过很多次。虽然有些菜比较辣，但是我正在慢慢适应，而且觉得特别有家的感觉。</div><div class="py">xǐ huān，wǒ jīng cháng chī zhōng guó cài。yīn wèi zhōng guó cài zhǒng lèi duō、wèi dào hǎo，suǒ yǐ wǒ zài jiā hé cān guǎn dōu diǎn guò hěn duō cì。suī rán yǒu xiē cài bǐ jiào là，dàn shì wǒ zhèng zài màn màn shì yìng，ér qiě jué de tè bié yǒu jiā de gǎn jué。</div><div class="en">Yes, I often eat Chinese food. Because Chinese food has many varieties and delicious flavors, I’ve ordered it many times at home and in restaurants. Although some dishes are quite spicy, I’m gradually getting used to them, and they make me feel really at home.</div>
+    <div class="vocab"><span class="chip"><b>种类</b> <i>zhǒng lèi</i> · varieties</span><span class="chip"><b>适应</b> <i>shì yìng</i> · get used to</span><span class="chip"><b>感觉</b> <i>gǎn jué</i> · feeling</span></div>
+    <div class="tip">💡 Opinion → reason (又…又…) → 吃过 (experience tense, lists real dishes) → 虽然…但是 reflection. 吃过 is your experience marker.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 你最喜欢哪一类中国菜？为什么？</div><div class="py">nǐ zuì xǐ huān nǎ yī lèi zhōng guó cài？wèi shén me？</div>
+      <div class="en">What type of Chinese food do you like most? Why?</div><div class="hint">提示：Pick one common category (e.g., dumplings, noodles, or stir-fried dishes); give a simple reason related to taste, memory, or convenience — e.g., &#x27;I like dumplings because they’re easy to share and remind me of family meals.&#x27;</div></div>
+  </div>
+</div>
+<div class="card" id="card-l_dishes" data-id="l_dishes">
+  <div class="cardtop"><span class="num">46</span>
+    <label class="done"><input type="checkbox" onchange="mark('l_dishes',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">你喜欢吃什么菜？</div><div class="py">nǐ xǐ huān chī shén me cài？</div><div class="en">What dishes do you like to eat?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-l_dishes',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('l_dishes')">看范文 ▼</button></div>
+  <div class="timer" id="t-l_dishes"></div>
+  <audio id="a-l_dishes" preload="none" src="audio/l_dishes_q.mp3"></audio>
+  <audio id="aa-l_dishes" preload="none" src="audio/l_dishes_a.mp3"></audio>
+  <div class="model" id="m-l_dishes" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-l_dishes',this,'a')">▶ 听范文</button></div>
+    <div class="zh">我喜欢吃家常菜，比如番茄炒蛋或者青椒肉丝。因为这些菜做法简单、营养均衡，而且我妈妈经常做，所以我从小吃到大了。虽然现在有时候也想尝试新菜式，但是每次回家吃饭，还是觉得这些传统菜最舒服。</div><div class="py">wǒ xǐ huān chī jiā cháng cài，bǐ rú fān qié chǎo dàn huò zhě qīng jiāo ròu sī。yīn wèi zhè xiē cài zuò fǎ jiǎn dān、yíng yǎng jūn héng，ér qiě wǒ mā mā jīng cháng zuò，suǒ yǐ wǒ cóng xiǎo chī dào dà le。suī rán xiàn zài yǒu shí hòu yě xiǎng cháng shì xīn cài shì，dàn shì měi cì huí jiā chī fàn，hái shì jué de zhè xiē chuán tǒng cài zuì shū fú。</div><div class="en">I like eating home-style dishes, such as tomato and egg stir-fry or green pepper with shredded pork. Because they’re easy to cook and nutritious, and my mum has made them for me since childhood, I’ve eaten them for years. Although I sometimes want to try new dishes, I still find these traditional ones the most comforting whenever I go home for meals.</div>
+    <div class="vocab"><span class="chip"><b>家常菜</b> <i>jiā cháng cài</i> · home-style dishes</span><span class="chip"><b>营养均衡</b> <i>yíng yǎng jūn héng</i> · nutritionally balanced</span><span class="chip"><b>舒服</b> <i>shū fú</i> · comforting</span></div>
+    <div class="tip">💡 Direct answer (name dishes) → reason → extend (除了…以外, pasta) → a mature reflection (eat healthily). The reflection lifts it past Band 2.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 你平时自己做饭吗？</div><div class="py">nǐ píng shí zì jǐ zuò fàn ma？</div>
+      <div class="en">Do you cook for yourself often?</div><div class="hint">提示：Yes, I cook simple dishes like fried rice or noodles 2–3 times a week — it’s practical and helps me save money.</div></div>
+  </div>
+</div>
+<div class="card" id="card-l_studymethods" data-id="l_studymethods">
+  <div class="cardtop"><span class="num">47</span>
+    <label class="done"><input type="checkbox" onchange="mark('l_studymethods',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">中国和澳大利亚的学习方式有什么分别？</div><div class="py">zhōng guó hé ào dà lì yà de xué xí fāng shì yǒu shén me fēn bié？</div><div class="en">What is the difference between studying in China and Australia?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-l_studymethods',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('l_studymethods')">看范文 ▼</button></div>
+  <div class="timer" id="t-l_studymethods"></div>
+  <audio id="a-l_studymethods" preload="none" src="audio/l_studymethods_q.mp3"></audio>
+  <audio id="aa-l_studymethods" preload="none" src="audio/l_studymethods_a.mp3"></audio>
+  <div class="model" id="m-l_studymethods" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-l_studymethods',this,'a')">▶ 听范文</button></div>
+    <div class="zh">中国学生通常更注重考试成绩，所以每天花很多时间做练习题；虽然澳大利亚学生也学习很努力，但是他们更喜欢通过小组讨论和实际项目来理解知识。我去年在中文课上做过一个关于节日的小组项目，不但学会了合作，而且记得更牢了。</div><div class="py">zhōng guó xué shēng tōng cháng gèng zhù zhòng kǎo shì chéng jì，suǒ yǐ měi tiān huā hěn duō shí jiān zuò liàn xí tí；suī rán ào dà lì yà xué shēng yě xué xí hěn nǔ lì，dàn shì tā men gèng xǐ huān tōng guò xiǎo zǔ tǎo lùn hé shí jì xiàng mù lái lǐ jiě zhī shí。wǒ qù nián zài zhōng wén kè shàng zuò guò yí gè guān yú jié rì de xiǎo zǔ xiàng mù，bù dàn xué huì le hé zuò，ér qiě jì de gèng láo le。</div><div class="en">Chinese students usually focus more on exam results, so they spend a lot of time doing practice questions every day; although Australian students also study hard, they prefer to understand knowledge through group discussions and hands-on projects. Last year, I did a festival-themed group project in Chinese class — not only did I learn how to cooperate, but I also remembered the content better.</div>
+    <div class="vocab"><span class="chip"><b>虽然…但是</b> <i>suī rán…dàn shì</i> · although…however</span><span class="chip"><b>不但…而且</b> <i>bù dàn…ér qiě</i> · not only…but also</span><span class="chip"><b>去年</b> <i>qù nián</i> · last year</span></div>
+    <div class="tip">💡 Use 听说 (&#x27;I&#x27;ve heard&#x27;) so you can compare honestly without claiming to know China firsthand. 但是 + 除了…以外 + 虽然…但是 give a balanced contrast.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那你觉得哪种方式对你自己学中文更有帮助？</div><div class="py">nà nǐ jué de nǎ zhǒng fāng shì duì nǐ zì jǐ xué zhōng wén gèng yǒu bāng zhù？</div>
+      <div class="en">Which approach do you think helps you learn Chinese better?</div><div class="hint">提示：Pick one (e.g., group work) + simple reason (e.g., &#x27;because I speak more&#x27; or &#x27;because I remember real examples&#x27;)</div></div>
+  </div>
+</div>
+<div class="card" id="card-l_extracurricular" data-id="l_extracurricular">
+  <div class="cardtop"><span class="num">48</span>
+    <label class="done"><input type="checkbox" onchange="mark('l_extracurricular',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">在中国，学生有什么课外活动？</div><div class="py">zài zhōng guó，xué shēng yǒu shén me kè wài huó dòng？</div><div class="en">What extracurricular activities do students have in China?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-l_extracurricular',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('l_extracurricular')">看范文 ▼</button></div>
+  <div class="timer" id="t-l_extracurricular"></div>
+  <audio id="a-l_extracurricular" preload="none" src="audio/l_extracurricular_q.mp3"></audio>
+  <audio id="aa-l_extracurricular" preload="none" src="audio/l_extracurricular_a.mp3"></audio>
+  <div class="model" id="m-l_extracurricular" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-l_extracurricular',this,'a')">▶ 听范文</button></div>
+    <div class="zh">在中国，学生经常参加课外活动，比如打篮球或者学画画。因为学校鼓励全面发展，所以很多学生放学后了还会去兴趣班或者运动队训练。虽然学习任务比较重，但是大家觉得这些活动不但能放松心情，而且能交到新朋友。</div><div class="py">zài zhōng guó，xué shēng jīng cháng cān jiā kè wài huó dòng，bǐ rú dǎ lán qiú huò zhě xué huà huà。yīn wèi xué xiào gǔ lì quán miàn fā zhǎn，suǒ yǐ hěn duō xué shēng fàng xué hòu le hái huì qù xìng qù bān huò zhě yùn dòng duì xùn liàn。suī rán xué xí rèn wù bǐ jiào zhòng，dàn shì dà jiā jué de zhè xiē huó dòng bù dàn néng fàng sōng xīn qíng，ér qiě néng jiāo dào xīn péng yǒu。</div><div class="en">In China, students often take part in after-school activities, such as playing basketball or learning painting. Because schools encourage well-rounded development, many students attend interest classes or sports teams after school. Although academic work is quite heavy, students feel these activities not only help them relax but also allow them to make new friends.</div>
+    <div class="vocab"><span class="chip"><b>课外活动</b> <i>kè wài huó dòng</i> · after-school activities</span><span class="chip"><b>全面发展</b> <i>quán miàn fā zhǎn</i> · well-rounded development</span><span class="chip"><b>放松心情</b> <i>fàng sōng xīn qíng</i> · relax one’s mind</span></div>
+    <div class="tip">💡 据我所知 / 听说 let you speak about China honestly. List 2-3 activities → 虽然…但是 → an opinion with 因为. The opinion is the marker&#x27;s &#x27;reflection&#x27;.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那你觉得哪种课外活动对学习最有帮助？为什么？</div><div class="py">nà nǐ jué de nǎ zhǒng kè wài huó dòng duì xué xí zuì yǒu bāng zhù？wèi shén me？</div>
+      <div class="en">Which after-school activity do you think helps study the most—and why?</div><div class="hint">提示：Pick one common activity (e.g., reading club, calligraphy, chess) and link it simply to focus, discipline, or time management—no need for personal stories.</div></div>
+  </div>
+</div>
+<div class="card" id="card-l_citycountry" data-id="l_citycountry">
+  <div class="cardtop"><span class="num">49</span>
+    <label class="done"><input type="checkbox" onchange="mark('l_citycountry',this.checked)"> 练过了</label></div>
+  <div class="q"><div class="zh">城市和郊区的生活有什么不同？</div><div class="py">chéng shì hé jiāo qū de shēng huó yǒu shén me bù tóng？</div><div class="en">What is the difference between city and country life?</div></div>
+  <div class="controls">
+    <button class="play" onclick="playA('a-l_citycountry',this,'q')">▶ 听老师问</button>
+    <button class="reveal" onclick="toggle('l_citycountry')">看范文 ▼</button></div>
+  <div class="timer" id="t-l_citycountry"></div>
+  <audio id="a-l_citycountry" preload="none" src="audio/l_citycountry_q.mp3"></audio>
+  <audio id="aa-l_citycountry" preload="none" src="audio/l_citycountry_a.mp3"></audio>
+  <div class="model" id="m-l_citycountry" style="display:none">
+    <div class="mtop"><span class="mlabel">范文 · model answer</span>
+      <button class="playmodel" onclick="playA('aa-l_citycountry',this,'a')">▶ 听范文</button></div>
+    <div class="zh">城市生活节奏快，郊区生活更安静。因为城市交通方便、商店多，所以很多人喜欢住在市区；虽然郊区房子大、空气好，但是上班要花更多时间。我去年搬去过郊区，不但住得舒服，而且每天能早起散步了。</div><div class="py">chéng shì shēng huó jié zòu kuài，jiāo qū shēng huó gèng ān jìng。yīn wèi chéng shì jiāo tōng fāng biàn、shāng diàn duō，suǒ yǐ hěn duō rén xǐ huān zhù zài shì qū；suī rán jiāo qū fáng zi dà、kōng qì hǎo，dàn shì shàng bān yào huā gèng duō shí jiān。wǒ qù nián bān qù guò jiāo qū，bù dàn zhù dé shū fú，ér qiě měi tiān néng zǎo qǐ sàn bù le。</div><div class="en">City life is fast-paced, while suburban life is quieter. Because cities have convenient transport and many shops, many people prefer living downtown; although suburbs have bigger houses and cleaner air, commuting takes more time. Last year I moved to the suburbs, and not only did I feel more comfortable, but I also started taking morning walks.</div>
+    <div class="vocab"><span class="chip"><b>节奏</b> <i>jié zòu</i> · pace</span><span class="chip"><b> commute</b> <i>c o m m u t e</i> · 通勤</span><span class="chip"><b>散步</b> <i>sàn bù</i> · morning walk</span></div>
+    <div class="tip">💡 Clean two-sided contrast: 城市 (热闹/方便) vs 郊区 (安静/空气好), joined by 但是. End with 虽然…但是 + future wish. Contrast = range markers reward.</div>
+    <div class="follow"><div class="flabel">老师可能接着问 · follow-up</div>
+      <div class="zh sm">↳ 那你现在还住在郊区吗？</div><div class="py">nà nǐ xiàn zài hái zhù zài jiāo qū ma？</div>
+      <div class="en">Do you still live in the suburbs now?</div><div class="hint">提示：Answer with a simple yes/no + time word (e.g., &#x27;Yes, I’m still living there&#x27; or &#x27;No, I moved back last month&#x27;)</div></div>
+  </div>
+</div>
+<footer>你做得到。每天开口练，<b>录下来再听一遍</b>。<br>You've got this — speak out loud every day and record yourself.</footer>
+</div>
+<script>
+var ST=JSON.parse(localStorage.getItem('cc_oral')||'{}');
+function save(){localStorage.setItem('cc_oral',JSON.stringify(ST));upd();}
+function upd(){var cs=document.querySelectorAll('.card'),done=0;
+ cs.forEach(function(c){var id=c.dataset.id,on=!!ST[id];c.classList.toggle('done',on);
+   var cb=c.querySelector('.done input');if(cb)cb.checked=on;if(on)done++;});
+ document.getElementById('bf').style.width=(done/49*100)+'%';
+ document.getElementById('bl').textContent=done+' / 49 practised'+(done==49?' 🎉 全部完成！':'');}
+function mark(id,on){ST[id]=on;save();}
+var cur=null,curBtn=null,curLabel='';
+function stopCur(){if(cur){cur.pause();cur.currentTime=0;}if(curBtn){curBtn.classList.remove('playing');curBtn.textContent=curLabel;}cur=null;curBtn=null;}
+function playA(aid,btn,kind){var a=document.getElementById(aid);var label=(kind==='q')?'▶ 听老师问':'▶ 听范文';
+ if(cur===a){stopCur();return;} stopCur(); cur=a;curBtn=btn;curLabel=label;
+ a.currentTime=0;a.play();btn.classList.add('playing');btn.textContent='■ 停';
+ a.onended=function(){btn.classList.remove('playing');btn.textContent=label;cur=null;curBtn=null;if(kind==='q'){startTimer(aid.slice(2));}};}
+function startTimer(id){var el=document.getElementById('t-'+id);var s=12;
+ el.textContent='🎤 你的回答 — 想 12 秒，然后开口说！';
+ var iv=setInterval(function(){s--;if(s<=0){clearInterval(iv);el.textContent='🎤 开始说！(说完再看范文)';setTimeout(function(){el.textContent='';},4000);}else{el.textContent='🎤 你的回答 — '+s+' 秒…';}},1000);}
+function toggle(id){var m=document.getElementById('m-'+id);m.style.display=(m.style.display==='none')?'block':'none';}
+upd();
+</script>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e705882a63a84e8b911f8e94f491529c"}'></script>
+</body></html>
